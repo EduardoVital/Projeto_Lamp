@@ -1,0 +1,68 @@
+footer {
+    color: $font-color-secundaria;
+    font-weight: 100;
+    
+    & .banner-color-footer {
+        background-color: rgba(12, 117, 121, 0.77);
+    }
+
+    & .banner-color-footer-2 {
+        background-color: $background-color-base-secundaria;
+    }
+
+    & .align-footer {
+       text-align: center;
+    }
+
+    & .horario {
+        padding-bottom: 0.9375rem;
+        line-height: 1.25rem;
+    
+        & .logo {
+            padding: 0.9375rem 0rem;
+        }
+    
+    }
+
+    & .telefone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0.625rem;
+
+        & img {
+            padding-right: 0.3125rem;
+        }
+    }
+
+    & .email {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0.3125rem;
+
+        & img {
+            padding-right: 0.3125rem;
+        }
+
+        & p {
+            font-size: 1.025rem;
+            text-align: justify;
+        }
+    }
+
+    & .redes-sociais {
+        padding: 0.9375rem 0rem;
+    }
+
+    & .endereco {
+        line-height: 1.25rem;
+
+        & p {
+            padding-bottom:  0.625rem;
+        }
+
+        & span {
+            display: block;
+        }
+    }
+}

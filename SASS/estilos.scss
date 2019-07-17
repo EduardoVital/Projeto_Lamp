@@ -1,0 +1,28 @@
+//ABSTRACTS
+@import 'Abstracts/breakpoints.scss';
+@import 'Abstracts/colors.scss';
+
+//BASE
+
+@import 'Base/meu-reset.scss';
+
+//COMPONENTS
+
+@import 'Components/logo.scss';
+@import 'Components/menu-principal.scss';
+@import 'Components/formulario.scss';
+@import 'Components/animation.scss';
+
+//LAYOUT
+
+@import 'Layout/body.scss';
+@import 'Layout/cabecalho.scss';
+@import 'Layout/container.scss';
+@import 'Layout/main.scss';
+@import 'Layout/rodape.scss';
+
+//PAGES
+
+//VENDORS
+@import 'Vendors/slick.scss';
+@import 'Vendors/slick-theme.scss';
