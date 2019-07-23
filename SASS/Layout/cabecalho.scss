@@ -182,15 +182,9 @@
     }
 }
 
-// ICONES SVG ====================
-// figure #Capa_1, figure #Layer_1 {
-//     height: 10rem;
-//     width: 10rem;
-// }
-
 
 .wrapper_orcamento_projeto {
-    background: url('/IMG/Background/planta.jpg');
+    background: url('../IMG/Background/planta.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -269,6 +263,106 @@
                 }
 
             }
+        }
+    }
+}
+
+// DIV titulo modelo dois ============
+
+.titulo_carrousel .titulo_modelo_dois {
+    text-align: center;
+    padding-top: 5rem;
+    text-transform: uppercase;
+
+    & h3::after {
+        content: "";
+        border-bottom: 5px solid $font-color-terceira;
+        display: block;
+        width: 10rem;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        border-radius: 1rem;
+    }
+
+    & h3 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2rem;
+        color: $font-color-terceira;
+        line-height: 2.3rem;
+
+        & span {
+            font-family: Segoe Print;
+            color: $font-color;
+            display: block;
+        }
+    }
+}
+
+.wrapper_carousel {
+    margin-top: 5rem;
+    background: rgba(12, 117, 121, 0.77);
+
+    & .wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 8rem;
+        
+        & .carousel {
+
+            & .carousel_itens {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+
+                & div {
+                    padding: 5rem 10rem; 
+                    background-color: #000;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.wrapper_lamp {
+    margin: 5rem;
+
+    & .wrapper {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+        & .titulo_modelo_tres {
+            color: $font-color;
+            text-transform: uppercase;
+            font-weight: bold;
+            width: 80%;
+            margin: 0 auto;
+            
+            & h3 {
+                font-size: 2rem;
+                font-weight: bold;
+                text-align: left;
+                margin-bottom: 0.6rem;
+            }
+
+            & #sub_titulo {
+                font-family: Segoe Print;
+                font-size: 2rem;
+                text-align: right;
+            }
+        }
+
+        p {
+            width: 70%;
+            margin: 2rem 2rem 0rem 2rem;
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 1.5rem;
         }
     }
 }

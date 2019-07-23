@@ -57,6 +57,10 @@ table {
   width: 12.375rem;
 }
 
+.wrapper_formulario {
+  background: rgba(12, 117, 121, 0.77);
+}
+
 nav ul li a:hover {
   color: #FFE500 !important;
   text-shadow: 0px 0px 10px #FFE500;
@@ -233,7 +237,7 @@ body {
 }
 
 .wrapper_orcamento_projeto {
-  background: url("/IMG/Background/planta.jpg");
+  background: url("../IMG/Background/planta.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -302,6 +306,90 @@ body {
 .wrapper_orcamento_projeto .background_banner .orcamento_projeto_content div figure #Capa_1 {
   height: 5rem;
   width: 5rem;
+}
+
+.titulo_carrousel .titulo_modelo_dois {
+  text-align: center;
+  padding-top: 5rem;
+  text-transform: uppercase;
+}
+.titulo_carrousel .titulo_modelo_dois h3::after {
+  content: "";
+  border-bottom: 5px solid #000;
+  display: block;
+  width: 10rem;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+.titulo_carrousel .titulo_modelo_dois h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #000;
+  line-height: 2.3rem;
+}
+.titulo_carrousel .titulo_modelo_dois h3 span {
+  font-family: Segoe Print;
+  color: #FFE500;
+  display: block;
+}
+
+.wrapper_carousel {
+  margin-top: 5rem;
+  background: rgba(12, 117, 121, 0.77);
+}
+.wrapper_carousel .wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 8rem;
+}
+.wrapper_carousel .wrapper .carousel .carousel_itens {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper_carousel .wrapper .carousel .carousel_itens div {
+  padding: 5rem 10rem;
+  background-color: #000;
+  margin-bottom: 1rem;
+}
+
+.wrapper_lamp {
+  margin: 5rem;
+}
+.wrapper_lamp .wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper_lamp .wrapper .titulo_modelo_tres {
+  color: #FFE500;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+}
+.wrapper_lamp .wrapper .titulo_modelo_tres h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0.6rem;
+}
+.wrapper_lamp .wrapper .titulo_modelo_tres #sub_titulo {
+  font-family: Segoe Print;
+  font-size: 2rem;
+  text-align: right;
+}
+.wrapper_lamp .wrapper p {
+  width: 70%;
+  margin: 2rem 2rem 0rem 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
 .wrapper {
