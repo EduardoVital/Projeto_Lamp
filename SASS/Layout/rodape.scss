@@ -1,68 +1,27 @@
-footer {
-    color: $font-color-secundaria;
-    font-weight: 100;
-    
-    & .banner-color-footer {
-        background-color: rgba(12, 117, 121, 0.77);
-    }
+.wrapper_rodape {
+    background-color: rgba(12, 117, 121, 0.77);
 
-    & .banner-color-footer-2 {
-        background-color: $background-color-base-secundaria;
-    }
+    & .background_rodape {
+        background-color: rgba(0, 0, 0, 0.64);
 
-    & .align-footer {
-       text-align: center;
-    }
+        & .grid_rodape {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1rem;
 
-    & .horario {
-        padding-bottom: 0.9375rem;
-        line-height: 1.25rem;
-    
-        & .logo {
-            padding: 0.9375rem 0rem;
-        }
-    
-    }
+            & section:first-child {
+                padding: 4rem;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+                color: $font-color-secundaria;
+                text-align: center;
 
-    & .telefone {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 0.625rem;
-
-        & img {
-            padding-right: 0.3125rem;
-        }
-    }
-
-    & .email {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 0.3125rem;
-
-        & img {
-            padding-right: 0.3125rem;
-        }
-
-        & p {
-            font-size: 1.025rem;
-            text-align: justify;
-        }
-    }
-
-    & .redes-sociais {
-        padding: 0.9375rem 0rem;
-    }
-
-    & .endereco {
-        line-height: 1.25rem;
-
-        & p {
-            padding-bottom:  0.625rem;
-        }
-
-        & span {
-            display: block;
+                & p {
+                    margin-top: 1rem;
+                }
+            }
         }
     }
 }

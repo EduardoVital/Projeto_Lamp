@@ -60,6 +60,90 @@ table {
 .wrapper_formulario {
   background: rgba(12, 117, 121, 0.77);
 }
+.wrapper_formulario .titulo_modelo_dois {
+  text-align: center;
+  padding-top: 3rem;
+}
+.wrapper_formulario .titulo_modelo_dois h3::after {
+  content: "";
+  border-bottom: 5px solid #000;
+  display: block;
+  width: 10rem;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+.wrapper_formulario .titulo_modelo_dois h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.wrapper_formulario .titulo_modelo_dois h3 span {
+  font-family: Segoe Print;
+  color: #FFE500;
+}
+.wrapper_formulario form {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper_formulario form .form_content {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.wrapper_formulario form .form_content .form_box_1 {
+  width: 50%;
+  text-align: right;
+  margin-right: 0.3rem;
+}
+.wrapper_formulario form .form_content .form_box_2 {
+  width: 50%;
+  text-align: left;
+  margin-left: 0.3rem;
+}
+.wrapper_formulario form .form_content input {
+  width: 88%;
+  padding: 0.8rem 0.6rem;
+  margin: 0.4rem 0.2rem;
+  border-radius: 0.3rem;
+  outline: none;
+  border: 2px solid #000;
+  background: transparent;
+}
+.wrapper_formulario form .form_content textarea {
+  width: 17.5rem;
+  height: 4.375rem;
+  padding: 0.8rem 0.6rem;
+  margin: 0.4rem 0.2rem;
+  border-radius: 0.3rem;
+  outline: none;
+  border: 2px solid #000;
+  background: transparent;
+}
+.wrapper_formulario form .form_content ::placeholder {
+  color: #FFF;
+  font-family: Segoe Print;
+}
+.wrapper_formulario form .form_content input[type=tel] {
+  width: 7.8rem;
+}
+.wrapper_formulario form .form_content_button {
+  margin-bottom: 2rem;
+}
+.wrapper_formulario form .form_content_button input[type=submit] {
+  margin-top: 0.5rem;
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: center;
+  background-color: #FFE500;
+  border: none;
+  border-radius: 0.3rem;
+}
 
 nav ul li a:hover {
   color: #FFE500 !important;
@@ -397,58 +481,28 @@ body {
   margin: 0 auto;
 }
 
-footer {
-  color: #FFF;
-  font-weight: 100;
-}
-footer .banner-color-footer {
+.wrapper_rodape {
   background-color: rgba(12, 117, 121, 0.77);
 }
-footer .banner-color-footer-2 {
+.wrapper_rodape .background_rodape {
   background-color: rgba(0, 0, 0, 0.64);
 }
-footer .align-footer {
+.wrapper_rodape .background_rodape .grid_rodape {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+.wrapper_rodape .background_rodape .grid_rodape section:first-child {
+  padding: 4rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
   text-align: center;
 }
-footer .horario {
-  padding-bottom: 0.9375rem;
-  line-height: 1.25rem;
-}
-footer .horario .logo {
-  padding: 0.9375rem 0rem;
-}
-footer .telefone {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 0.625rem;
-}
-footer .telefone img {
-  padding-right: 0.3125rem;
-}
-footer .email {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 0.3125rem;
-}
-footer .email img {
-  padding-right: 0.3125rem;
-}
-footer .email p {
-  font-size: 1.025rem;
-  text-align: justify;
-}
-footer .redes-sociais {
-  padding: 0.9375rem 0rem;
-}
-footer .endereco {
-  line-height: 1.25rem;
-}
-footer .endereco p {
-  padding-bottom: 0.625rem;
-}
-footer .endereco span {
-  display: block;
+.wrapper_rodape .background_rodape .grid_rodape section:first-child p {
+  margin-top: 1rem;
 }
 
 /* Slider */

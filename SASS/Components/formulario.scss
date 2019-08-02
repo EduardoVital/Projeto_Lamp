@@ -1,3 +1,101 @@
 .wrapper_formulario {
     background: rgba(12, 117, 121, 0.77);
+
+        & .titulo_modelo_dois {
+            text-align: center;
+            padding-top: 3rem;
+
+            & h3::after {
+                content: "";
+                border-bottom: 5px solid $font-color-terceira;
+                display: block;
+                width: 10rem;
+                max-width: 90%;
+                margin: 0 auto;
+                margin-top: 1rem;
+                border-radius: 1rem;
+            }
+
+            & h3 {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 2rem;
+
+                & span {
+                    font-family: Segoe Print;
+                    color: $font-color;
+                }
+            }
+        }
+
+    & form {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+
+        & .form_content {
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+
+            & .form_box_1 {
+                width: 50%;
+                text-align: right;
+                margin-right: 0.3rem;
+            }
+
+            & .form_box_2 {
+                width: 50%;
+                text-align: left;
+                margin-left: 0.3rem;
+            }
+
+            & input {
+                width: 88%;
+                padding: 0.8rem 0.6rem;
+                margin:  0.4rem 0.2rem;
+                border-radius: 0.3rem;
+                outline: none;
+                border: 2px solid #000;
+                background: transparent;
+              }
+            
+            & textarea {
+                width: 17.5rem;
+                height: 4.375rem;
+                padding: 0.8rem 0.6rem;
+                margin: 0.4rem 0.2rem;
+                border-radius: 0.3rem;
+                outline: none;
+                border: 2px solid #000;
+                background: transparent;
+            }
+
+            & ::placeholder {
+                color: $font-color-secundaria;
+                font-family: Segoe Print;
+            }
+
+            & input[type="tel"] {
+                width: 7.8rem;
+            }
+        }
+
+        & .form_content_button {
+            margin-bottom: 2rem;
+            
+            & input[type="submit"] {
+                margin-top: 0.5rem;
+                padding: 1rem 4rem;
+                display: flex;
+                justify-content: center;
+                background-color: $font-color;
+                border: none;
+                border-radius: 0.3rem;
+            }
+        }
+    }
 }
