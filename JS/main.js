@@ -1,47 +1,41 @@
-// Menu Mobile
-
-let abrirBotao = document.querySelector(".openbtn");
-let fecharBotao = document.querySelector(".closebtn");
-
-
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-}
-  
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
-
-abrirBotao.addEventListener("click", function(){
-    openNav();
-})
-
-fecharBotao.addEventListener("click", function(){
-    closeNav();
-})
-
-// Slider
-
-$(document).ready(function(){
-
-   $('.teste').slick({
-
-    dots: true,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear',
-    autoplay: true,
-    mobileFirst: true,
-    adaptiveHeigh: true,
+var glider = new Glider(document.querySelector('.glider'), {
+    
     slidesToShow: 1,
-    arrows: true,
-    centermode: true,
-    // responsive: 'unslick',
-    // respondTo: 'min',
-    //    fade: true,
+    slidesToScroll: 1,
+    dots: '#dots',
+    draggable: true,
+    scrollLock: true,
+    rewind: true,
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    }
+    
+  });
 
-   });
 
-});
+  // Form animation  =======================================
+
+  $('input').on('focusin', function() {
+    $(this).parent().find('label').addClass('active');
+  });
+  
+  $('input').on('focusout', function() {
+    if (!this.value) {
+      $(this).parent().find('label').removeClass('active');
+    }
+  });
+
+  // textarea ================================================
+
+  $('textarea').on('focusin', function() {
+    $(this).parent().find('label').addClass('active');
+  });
+  
+  $('textarea').on('focusout', function() {
+    if (!this.value) {
+      $(this).parent().find('label').removeClass('active');
+    }
+  });
+  
 

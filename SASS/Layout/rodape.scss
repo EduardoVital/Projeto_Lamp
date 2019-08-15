@@ -9,7 +9,7 @@
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 1rem;
 
-            & section:first-child {
+            & .rodape_1{
                 padding: 4rem;
                 display: flex;
                 flex-flow: column;
@@ -17,9 +17,75 @@
                 justify-content: center;
                 color: $font-color-secundaria;
                 text-align: center;
+                
 
                 & p {
                     margin-top: 1rem;
+                }
+            }
+
+            & .rodape_2 {
+                padding: 4rem 2rem;
+                display: flex;
+                flex-flow: column;
+                align-items: flex-start;
+                justify-content: center;
+                color: $font-color-secundaria;
+                text-align: center;
+
+                & div:first-child {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 1rem;
+
+                    & p {
+                        margin-left: 0.5rem;
+                    }
+                }
+
+                & div:last-child {
+                    display: flex;
+                    align-items: center;
+
+                    & div {
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: center;
+                        align-items: flex-start;
+
+                        & p {
+                            margin-left: 0.5rem;
+                        }
+                    }
+                }
+            }
+            
+            & .rodape_3 {
+                padding: 4rem 2rem;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: space-evenly;
+                color: $font-color-secundaria;
+                text-align: center;
+
+                & a {
+                    text-decoration: none;
+                }
+
+                & div:last-child {
+                    & span {
+                        display: block;
+                    }
+                }
+            }
+            
+            & svg {
+                width: 30px;
+                height: 30px;
+
+                & path {
+                    fill: $font-color;
                 }
             }
         }

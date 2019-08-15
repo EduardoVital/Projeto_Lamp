@@ -40,48 +40,86 @@
             display: flex;
             align-items: center;
             margin-top: 2rem;
+            width: 100%;
 
-            & .form_box_1 {
+            & .form_box {
                 width: 50%;
-                text-align: right;
-                margin-right: 0.3rem;
-            }
 
-            & .form_box_2 {
-                width: 50%;
-                text-align: left;
-                margin-left: 0.3rem;
-            }
+                & div {
+                    text-align: left;
+                    position: relative;
 
+                    & label {
+                        position: absolute;
+                        top: 8px;
+                        font-size: 15px;
+                        margin: 10px;
+                        padding: 3px 5px;
+                        -webkit-transition: top .2s ease-in-out, 
+                        font-size .2s ease-in-out;
+                        transition: top .2s ease-in-out, 
+                        font-size .2s ease-in-out;
+                        background: rgb(68, 149, 152);
+                        color: $font-color-secundaria;
+                    }
+
+                    & .active {
+                        top: -15px;
+                        font-size: 15px;
+                        color: $font-color;
+                    }
+                }
+            }
+           
             & input {
                 width: 88%;
                 padding: 0.8rem 0.6rem;
-                margin:  0.4rem 0.2rem;
+                margin:  0.4rem 0rem;
                 border-radius: 0.3rem;
                 outline: none;
-                border: 2px solid #000;
+                border: 2px solid $font-color-secundaria;
                 background: transparent;
+                transition: all 0.2s ease;
+                color: $font-color-secundaria;
+                // color: $font-color-secundaria;
               }
-            
+
+              & input:hover,
+              & input:focus {
+                outline: none;
+                border-color: $font-color;
+                transition: all 0.2s ease;
+              }
+              
             & textarea {
-                width: 17.5rem;
-                height: 4.375rem;
+                width: 17.9rem;
+                height: 4.59rem;
                 padding: 0.8rem 0.6rem;
-                margin: 0.4rem 0.2rem;
+                margin: 0.4rem 0rem;
                 border-radius: 0.3rem;
                 outline: none;
-                border: 2px solid #000;
+                border: 2px solid $font-color-secundaria;
                 background: transparent;
+                transition: all 0.2s ease;
+                color: $font-color-secundaria;
+                // color: $font-color-secundaria;
+            }
+
+            & textarea:hover,
+            & textarea:focus {
+              outline: none;
+              border-color: $font-color;;
+              transition: all 0.2s ease;
             }
 
             & ::placeholder {
                 color: $font-color-secundaria;
-                font-family: Segoe Print;
+                font-family: Segoe UI;
             }
 
-            & input[type="tel"] {
-                width: 7.8rem;
-            }
+            // & input[type="tel"] {
+            //     width: 7.7rem;
+            // }
         }
 
         & .form_content_button {
@@ -92,10 +130,23 @@
                 padding: 1rem 4rem;
                 display: flex;
                 justify-content: center;
-                background-color: $font-color;
+                background-color: $font-color-secundaria;
                 border: none;
                 border-radius: 0.3rem;
+                cursor: pointer;
+                font-weight: bold;
+                transition: all 0.2s ease;
             }
+
+            & input[type="submit"]:hover {
+                background-color: $font-color;
+                box-shadow: 0px 0px 12px 0px #FFE500;
+                transition: all 0.2s ease;
+            }
+
         }
+        
     }
 }
+
+// CLASSE USADA NO JS
