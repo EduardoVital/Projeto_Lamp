@@ -14,28 +14,25 @@ var glider = new Glider(document.querySelector('.glider'), {
   });
 
 
-  // Form animation  =======================================
+// Form animation  =======================================
 
-  $('input').on('focusin', function() {
+  $('.cool').on('focusin', function() {
     $(this).parent().find('label').addClass('active');
   });
   
-  $('input').on('focusout', function() {
+  $('.cool').on('focusout', function() {
     if (!this.value) {
       $(this).parent().find('label').removeClass('active');
     }
   });
 
-  // textarea ================================================
+// Scroll  =======================================
 
-  $('textarea').on('focusin', function() {
-    $(this).parent().find('label').addClass('active');
-  });
-  
-  $('textarea').on('focusout', function() {
-    if (!this.value) {
-      $(this).parent().find('label').removeClass('active');
-    }
-  });
-  
-
+$('nav a').click(function(e){
+  e.preventDefault();
+  var id = $(this).attr('href');
+    targetOffset = $(id).offset().top;
+  $('html, body').animate({
+    scrollTop: targetOffset
+  }, 800);
+});

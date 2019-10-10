@@ -3,7 +3,7 @@
 @import 'Abstracts/colors.scss';
 
 //BASE
-
+@import 'Base/fonts.scss';
 @import 'Base/meu-reset.scss';
 
 //COMPONENTS
@@ -25,4 +25,7 @@
 
 //VENDORS
 @import 'Vendors/glider.min.scss';
+
+//MOBILE
+@import 'mobile/estilos_mobile.scss';
 

@@ -1,0 +1,129 @@
+
+// 425px 
+@media(max-width: 425px) {
+    .wrapper_cabecalho  {
+        & .background_banner {
+            & .banner {
+                & .menu {
+                    & nav, & .icones_redes_sociais {
+                        display: none;
+                    }
+                }
+            }
+
+            // SEÇAO TITULO MODELO ============================
+
+            & .titulo_modelo {
+                margin: 4rem 0rem;
+
+               & .wrapper {
+                   max-width: 100%;
+                   
+                   & div h2 {
+                       font-size: 1.2rem;
+
+                       & span {
+                           margin-top: 0.2rem;
+                       }
+                   }
+
+                   & div h2::after {
+                        border-bottom: 3px solid #FFF;
+                        width: 5rem;
+                        margin-top: 0.4rem;
+                   }
+               }
+            }
+
+            // SEÇAO RODAPE CABECALHO  ============================
+
+            & .rodape_cabecalho {
+                & .wrapper {
+                    flex-flow: column;
+                    max-width: 80%;
+
+                    & div {
+                        width: 100%;
+
+                        & h3 {
+                            font-size: 1rem;
+                            line-height: 1.1rem;
+                        }
+
+                        & p {
+                            margin-top: 0.8rem;
+                            text-align: justify;
+                            font-size: 1rem;
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // MAIN  ============================
+
+    .wrapper_servicos { 
+        & .titulo_modelo_dois {
+
+            & h3::after {
+                width: 5rem;
+            }
+
+            & h3 {
+                font-size: 1.5rem;
+                max-width: 100%;
+            }
+        }
+
+        & .wrapper-grid {
+            grid-template-columns: 1fr;
+    
+            & div {
+                & figure {
+                    border-radius: 7.5rem;
+                    padding: 2.5rem;
+                    box-shadow: 3px 3px 6px $font-color;
+                    margin-bottom: 2rem;
+    
+                    & #Capa_1, & #Layer_1 {
+                        height: 7rem;
+                        width: 7rem;
+                    }
+                }
+    
+                & p {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    .wrapper_orcamento_projeto {
+        & .background_banner {
+            & .titulo_modelo_dois {
+                padding-top: 3rem;
+
+                & h3::after {
+                    width: 5rem;
+                    max-width: 100%;
+                    margin-top: 0.5rem;
+                }
+
+                & h3 {
+                    font-size: 1.2rem;
+                    color: $font-color-secundaria;
+                    line-height: 1.3rem;
+    
+                    & span {
+                        font-family: Segoe Print;
+                        color: $font-color;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+

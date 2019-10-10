@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "Kalam";
+  src: url(../FONTS/Kalam/Kalam-Regular.ttf);
+}
+@font-face {
+  font-family: "Kalam";
+  src: url(../FONTS/Kalam/Kalam-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Didact Gothic";
+  src: url(../FONTS/DidactGothic/DidactGothic-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../FONTS/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../FONTS/AdventPro/AdventPro-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../FONTS/Montserrat/Montserrat-ExtraBold.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../FONTS/Montserrat/Montserrat-Black.ttf);
+  font-weight: 900;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -80,7 +112,7 @@ table {
 }
 .wrapper_formulario .titulo_modelo_dois h3 span {
   font-family: Segoe Print;
-  color: #FFE500;
+  color: #FFE01B;
 }
 .wrapper_formulario form {
   width: 60%;
@@ -117,10 +149,10 @@ table {
 .wrapper_formulario form .form_content .form_box div .active {
   top: -15px;
   font-size: 15px;
-  color: #FFE500;
+  color: #FFE01B;
 }
 .wrapper_formulario form .form_content input {
-  width: 88%;
+  width: 90%;
   padding: 0.8rem 0.6rem;
   margin: 0.4rem 0rem;
   border-radius: 0.3rem;
@@ -132,11 +164,11 @@ table {
 }
 .wrapper_formulario form .form_content input:hover, .wrapper_formulario form .form_content input:focus {
   outline: none;
-  border-color: #FFE500;
+  border-color: #FFE01B;
   transition: all 0.2s ease;
 }
 .wrapper_formulario form .form_content textarea {
-  width: 17.9rem;
+  width: 90%;
   height: 4.59rem;
   padding: 0.8rem 0.6rem;
   margin: 0.4rem 0rem;
@@ -149,7 +181,7 @@ table {
 }
 .wrapper_formulario form .form_content textarea:hover, .wrapper_formulario form .form_content textarea:focus {
   outline: none;
-  border-color: #FFE500;
+  border-color: #FFE01B;
   transition: all 0.2s ease;
 }
 .wrapper_formulario form .form_content ::placeholder {
@@ -170,16 +202,13 @@ table {
   cursor: pointer;
   font-weight: bold;
   transition: all 0.2s ease;
+  color: #000;
 }
 .wrapper_formulario form .form_content_button input[type=submit]:hover {
-  background-color: #FFE500;
+  background-color: #FFE01B;
   box-shadow: 0px 0px 12px 0px #FFE500;
   transition: all 0.2s ease;
-}
-
-nav ul li a:hover {
-  color: #FFE500 !important;
-  text-shadow: 0px 0px 10px #FFE500;
+  color: #000;
 }
 
 nav ul li a::after {
@@ -190,8 +219,7 @@ nav ul li a::after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #FFE500;
-  box-shadow: 0 0 12px 0px #FFE500;
+  background: #FFE01B;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
   border-radius: 1rem;
@@ -203,25 +231,26 @@ nav ul li a:hover::after {
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Didact Gothic", sans-serif;
 }
 
 .wrapper_cabecalho {
-  background-image: url("../IMG/background/background-cabecalho.jpg");
+  background-image: url("../IMG/Portfolio/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
+  background-attachment: fixed;
 }
 .wrapper_cabecalho .background_banner {
-  background-color: rgba(12, 117, 121, 0.77);
+  background-color: rgba(0, 0, 0, 0.77);
   height: 100%;
 }
 .wrapper_cabecalho .background_banner .banner {
-  background-color: rgba(0, 0, 0, 0.64);
+  background-color: rgba(12, 117, 121, 0.77);
 }
 .wrapper_cabecalho .background_banner .banner .menu {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .wrapper_cabecalho .background_banner .banner .menu nav ul {
@@ -235,88 +264,104 @@ body {
   position: relative;
   padding: 0.8rem;
 }
-.wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais a {
+.wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais {
+  display: flex;
+  align-items: center;
+}
+.wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais p {
+  font-family: "Kalam";
+  font-weight: bold;
+  color: #FFF;
+}
+.wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais .icones a {
   text-decoration: none;
+  background: #449598;
+  padding: 17px 15px 10px 15px;
+  border-radius: 50%;
+  margin: 0.5rem;
 }
-.wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais a svg {
-  width: 30px;
-  height: 30px;
+.wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais .icones a svg {
+  width: 20px;
+  height: 20px;
 }
-.wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais a path {
-  fill: #FFE500;
+.wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais .icones a path {
+  fill: #FFE01B;
 }
 .wrapper_cabecalho .background_banner .titulo_modelo {
   text-align: center;
-  margin: 10rem 0rem;
-}
-.wrapper_cabecalho .background_banner .titulo_modelo .wrapper h2::after {
-  content: "";
-  border-bottom: 5px solid #FFF;
-  display: block;
-  width: 10rem;
-  max-width: 90%;
-  margin: 0 auto;
-  margin-top: 1rem;
-  border-radius: 1rem;
+  padding: 8rem 0rem;
+  background-color: rgba(12, 117, 121, 0.77);
 }
 .wrapper_cabecalho .background_banner .titulo_modelo .wrapper h2 {
-  font-size: 3rem;
-  font-family: Segoe Print;
-  color: #FFE500;
+  font-size: 4rem;
+  font-family: "Montserrat";
+  color: #FFE01B;
   text-transform: uppercase;
+  font-weight: 900;
 }
 .wrapper_cabecalho .background_banner .titulo_modelo .wrapper h2 span {
   display: block;
-  font-family: Segoe UI;
+  font-family: "Montserrat";
   color: #FFF;
 }
 .wrapper_cabecalho .background_banner .rodape_cabecalho {
-  background-color: rgba(0, 0, 0, 0.64);
+  background-color: rgba(12, 117, 121, 0.77);
 }
 .wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper {
   padding: 3rem 0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 50%;
+  flex-flow: column;
+  background: rgba(12, 117, 121, 0.77);
 }
 .wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper div {
-  width: 50%;
   color: #FFF;
+  padding: 2rem;
 }
 .wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper div h3 {
-  font-size: 2rem;
+  font-size: 1.9rem;
   text-transform: uppercase;
   text-align: center;
-  line-height: 2.5rem;
+  line-height: 2.3rem;
+  font-family: "Montserrat";
+  text-align: center;
 }
 .wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper div h3 span {
-  font-family: Segoe Print;
-  color: #FFE500;
+  color: #FFE01B;
+  font-weight: 800;
 }
-.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper div p {
-  text-align: right;
+.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper .rodape_cabecalho_texto {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 2rem;
+}
+.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper .rodape_cabecalho_texto figure {
+  padding-right: 1rem;
+}
+.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper .rodape_cabecalho_texto figure svg {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper .rodape_cabecalho_texto figure svg path {
+  fill: #FFE01B;
+}
+.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper .rodape_cabecalho_texto p {
+  text-align: left;
   font-size: 1.5rem;
   font-weight: normal;
+  padding: 0.5rem 0;
 }
 
 .wrapper {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
 .wrapper_servicos .titulo_modelo_dois {
   text-align: center;
-  margin: 5rem 0rem;
-}
-.wrapper_servicos .titulo_modelo_dois h3::after {
-  content: "";
-  border-bottom: 5px solid #FFE500;
-  display: block;
-  width: 10rem;
-  max-width: 90%;
-  margin: 0 auto;
-  margin-top: 1rem;
-  border-radius: 1rem;
+  padding: 5rem 0rem;
 }
 .wrapper_servicos .titulo_modelo_dois h3 {
   text-transform: uppercase;
@@ -325,13 +370,13 @@ body {
 }
 .wrapper_servicos .titulo_modelo_dois h3 span {
   font-family: Segoe Print;
-  color: #FFE500;
+  color: #FFE01B;
 }
 .wrapper_servicos .wrapper-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4rem 1rem;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 .wrapper_servicos .wrapper-grid div {
   display: flex;
@@ -342,7 +387,7 @@ body {
 .wrapper_servicos .wrapper-grid div figure {
   border-radius: 7.5rem;
   padding: 2.5rem;
-  box-shadow: 3px 3px 6px #FFE500;
+  box-shadow: 3px 3px 6px #FFE01B;
   margin-bottom: 2rem;
 }
 .wrapper_servicos .wrapper-grid div figure #Capa_1, .wrapper_servicos .wrapper-grid div figure #Layer_1 {
@@ -354,7 +399,7 @@ body {
   font-size: 1.5rem;
   font-family: Segoe Print;
   font-weight: bold;
-  color: #FFE500;
+  color: #FFE01B;
 }
 
 .wrapper_orcamento_projeto {
@@ -362,24 +407,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 .wrapper_orcamento_projeto .background_banner {
-  background-color: rgba(12, 117, 121, 0.77);
+  background: rgba(12, 117, 121, 0.77);
   height: 100%;
 }
 .wrapper_orcamento_projeto .background_banner .titulo_modelo_dois {
   text-align: center;
   padding-top: 5rem;
-}
-.wrapper_orcamento_projeto .background_banner .titulo_modelo_dois h3::after {
-  content: "";
-  border-bottom: 5px solid #FFE500;
-  display: block;
-  width: 10rem;
-  max-width: 90%;
-  margin: 0 auto;
-  margin-top: 1rem;
-  border-radius: 1rem;
 }
 .wrapper_orcamento_projeto .background_banner .titulo_modelo_dois h3 {
   text-transform: uppercase;
@@ -390,7 +426,7 @@ body {
 }
 .wrapper_orcamento_projeto .background_banner .titulo_modelo_dois h3 span {
   font-family: Segoe Print;
-  color: #FFE500;
+  color: #FFE01B;
   display: block;
 }
 .wrapper_orcamento_projeto .background_banner .orcamento_projeto_content {
@@ -419,19 +455,19 @@ body {
 .wrapper_orcamento_projeto .background_banner .orcamento_projeto_content div figure {
   border-radius: 5.5rem;
   padding: 3rem 3.3rem;
-  box-shadow: 3px 3px 6px #FFE500;
+  box-shadow: 3px 3px 6px #FFE01B;
   margin-bottom: 2rem;
   background: #FFF;
   width: fit-content;
 }
-.wrapper_orcamento_projeto .background_banner .orcamento_projeto_content div figure #Capa_1 {
+.wrapper_orcamento_projeto .background_banner .orcamento_projeto_content div figure img {
   height: 5rem;
   width: 5rem;
 }
 
 .titulo_carrousel .titulo_modelo_dois {
   text-align: center;
-  padding-top: 5rem;
+  padding: 5rem 0;
   text-transform: uppercase;
 }
 .titulo_carrousel .titulo_modelo_dois h3::after {
@@ -453,18 +489,17 @@ body {
 }
 .titulo_carrousel .titulo_modelo_dois h3 span {
   font-family: Segoe Print;
-  color: #FFE500;
+  color: #FFE01B;
   display: block;
 }
 
 .wrapper_carousel {
-  margin-top: 5rem;
   background: rgba(12, 117, 121, 0.77);
 }
 .wrapper_carousel .wrapper {
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  padding: 1rem 26rem;
 }
 .wrapper_carousel .wrapper .glider-contain {
   margin-top: 15px;
@@ -479,11 +514,13 @@ body {
 .wrapper_carousel .wrapper .glider-contain .glider div p {
   margin-top: 25px;
 }
-.wrapper_carousel .wrapper .glider-contain .glider-prev, .wrapper_carousel .wrapper .glider-contain .glider-next {
-  color: #c7c725a6;
+.wrapper_carousel .wrapper .glider-contain .glider-prev svg, .wrapper_carousel .wrapper .glider-contain .glider-next svg {
+  fill: #c7c725a6;
+  height: 40px;
+  width: 40px;
 }
 .wrapper_carousel .wrapper .glider-contain .glider-prev:hover, .wrapper_carousel .wrapper .glider-contain .glider-next:hover {
-  color: #FFE500;
+  color: #FFE01B;
 }
 .wrapper_carousel .wrapper .glider-contain #dots {
   margin-top: 15px;
@@ -493,7 +530,7 @@ body {
 }
 
 .wrapper_lamp {
-  margin: 5rem;
+  padding: 5rem;
 }
 .wrapper_lamp .wrapper {
   display: flex;
@@ -502,7 +539,7 @@ body {
   align-items: center;
 }
 .wrapper_lamp .wrapper .titulo_modelo_tres {
-  color: #FFE500;
+  color: #FFE01B;
   text-transform: uppercase;
   font-weight: bold;
   width: 80%;
@@ -600,7 +637,7 @@ body {
   height: 30px;
 }
 .wrapper_rodape .background_rodape .grid_rodape svg path {
-  fill: #FFE500;
+  fill: #FFE01B;
 }
 
 .glider, .glider-contain {
@@ -677,7 +714,7 @@ body {
   font-size: 40px;
   text-decoration: none;
   left: -23px;
-  top: 30%;
+  top: 40%;
   cursor: pointer;
   color: #666;
   opacity: 1;
@@ -746,6 +783,87 @@ body {
     background-color: rgba(156, 156, 156, 0.25);
     -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
     box-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
+  }
+}
+@media (max-width: 425px) {
+  .wrapper_cabecalho .background_banner .banner .menu nav, .wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais {
+    display: none;
+  }
+  .wrapper_cabecalho .background_banner .titulo_modelo {
+    margin: 4rem 0rem;
+  }
+  .wrapper_cabecalho .background_banner .titulo_modelo .wrapper {
+    max-width: 100%;
+  }
+  .wrapper_cabecalho .background_banner .titulo_modelo .wrapper div h2 {
+    font-size: 1.2rem;
+  }
+  .wrapper_cabecalho .background_banner .titulo_modelo .wrapper div h2 span {
+    margin-top: 0.2rem;
+  }
+  .wrapper_cabecalho .background_banner .titulo_modelo .wrapper div h2::after {
+    border-bottom: 3px solid #FFF;
+    width: 5rem;
+    margin-top: 0.4rem;
+  }
+  .wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper {
+    flex-flow: column;
+    max-width: 80%;
+  }
+  .wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper div {
+    width: 100%;
+  }
+  .wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper div h3 {
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+  .wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper div p {
+    margin-top: 0.8rem;
+    text-align: justify;
+    font-size: 1rem;
+  }
+
+  .wrapper_servicos .titulo_modelo_dois h3::after {
+    width: 5rem;
+  }
+  .wrapper_servicos .titulo_modelo_dois h3 {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+  .wrapper_servicos .wrapper-grid {
+    grid-template-columns: 1fr;
+  }
+  .wrapper_servicos .wrapper-grid div figure {
+    border-radius: 7.5rem;
+    padding: 2.5rem;
+    box-shadow: 3px 3px 6px #FFE01B;
+    margin-bottom: 2rem;
+  }
+  .wrapper_servicos .wrapper-grid div figure #Capa_1, .wrapper_servicos .wrapper-grid div figure #Layer_1 {
+    height: 7rem;
+    width: 7rem;
+  }
+  .wrapper_servicos .wrapper-grid div p {
+    font-size: 1.3rem;
+  }
+
+  .wrapper_orcamento_projeto .background_banner .titulo_modelo_dois {
+    padding-top: 3rem;
+  }
+  .wrapper_orcamento_projeto .background_banner .titulo_modelo_dois h3::after {
+    width: 5rem;
+    max-width: 100%;
+    margin-top: 0.5rem;
+  }
+  .wrapper_orcamento_projeto .background_banner .titulo_modelo_dois h3 {
+    font-size: 1.2rem;
+    color: #FFF;
+    line-height: 1.3rem;
+  }
+  .wrapper_orcamento_projeto .background_banner .titulo_modelo_dois h3 span {
+    font-family: Segoe Print;
+    color: #FFE01B;
+    display: block;
   }
 }
 

@@ -1,21 +1,80 @@
 // MAIN ====================
 
+// .rodape_cabecalho {
+//     background-color: rgba(12, 117, 121, 0.77);
+
+//        & .wrapper {
+//             padding: 3rem 0rem;
+//             display: flex;
+//             justify-content: space-between;
+//             align-items: center;
+//             width: 50%;
+//             flex-flow: column;
+//             background: rgba(12, 117, 121, 0.77);
+
+//             & div {
+//                 color: $font-color-secundaria;
+//                 padding: 2rem;
+
+//                 & h3 {
+//                     font-size: 1.9rem;
+//                     text-transform: uppercase;
+//                     text-align: center;
+//                     line-height: 2.3rem;
+//                     font-family: "Montserrat";
+//                     text-align: center;
+
+//                  & span {
+//                      color: $font-color;
+//                      font-weight: 800;
+//                     }
+//                 }
+//             }
+            
+//             & .rodape_cabecalho_texto {
+//                 display: flex;
+//                 align-items: center;
+//                 padding: .8rem 2rem;
+
+//                 & figure {
+//                     padding-right: 1rem;
+
+//                     & svg {
+//                         height: 2.5rem;
+//                         width: 2.5rem;
+
+//                         & path {
+//                             fill: $font-color;
+//                         }
+//                     }
+//                 }
+
+//                 & p {
+//                     text-align: left;
+//                     font-size: 1.5rem;
+//                     font-weight: normal;
+//                     padding: .5rem 0;
+//                 }
+//             }
+//         }
+//     }
+
 .wrapper_servicos {
 
     & .titulo_modelo_dois {
         text-align: center;
-        margin: 5rem 0rem;
+        padding: 5rem 0rem;
 
-        & h3::after {
-            content: "";
-            border-bottom: 5px solid $font-color;
-            display: block;
-            width: 10rem;
-            max-width: 90%;
-            margin: 0 auto;
-            margin-top: 1rem;
-            border-radius: 1rem;
-        }
+        // & h3::after {
+        //     content: "";
+        //     border-bottom: 5px solid $font-color;
+        //     display: block;
+        //     width: 10rem;
+        //     max-width: 90%;
+        //     margin: 0 auto;
+        //     margin-top: 1rem;
+        //     border-radius: 1rem;
+        // }
 
         & h3 {
             text-transform: uppercase;
@@ -33,7 +92,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 4rem 1rem;
-        margin-bottom: 5rem;
+        padding-bottom: 5rem;
 
         & div {
             display: flex;
@@ -70,25 +129,27 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 
     & .background_banner {
-        background-color: rgba(12, 117, 121, 0.77);
+        // background-color: rgba(12, 117, 121, 0.77);
+        background: rgba(12, 117, 121, 0.77);
         height: 100%;
 
         & .titulo_modelo_dois {
             text-align: center;
             padding-top: 5rem;
 
-            & h3::after {
-                content: "";
-                border-bottom: 5px solid $font-color;
-                display: block;
-                width: 10rem;
-                max-width: 90%;
-                margin: 0 auto;
-                margin-top: 1rem;
-                border-radius: 1rem;
-            }
+            // & h3::after {
+            //     content: "";
+            //     border-bottom: 5px solid $font-color;
+            //     display: block;
+            //     width: 10rem;
+            //     max-width: 90%;
+            //     margin: 0 auto;
+            //     margin-top: 1rem;
+            //     border-radius: 1rem;
+            // }
     
             & h3 {
                 text-transform: uppercase;
@@ -138,7 +199,7 @@
                     background: $font-color-secundaria;
                     width: fit-content;
 
-                    & #Capa_1 {
+                    & img {
                         height: 5rem;
                         width: 5rem;
                     }
@@ -153,7 +214,7 @@
 
 .titulo_carrousel .titulo_modelo_dois {
     text-align: center;
-    padding-top: 5rem;
+    padding: 5rem 0;
     text-transform: uppercase;
 
     & h3::after {
@@ -183,13 +244,12 @@
 }
 
 .wrapper_carousel {
-    margin-top: 5rem;
     background: rgba(12, 117, 121, 0.77);
 
     & .wrapper {
         display: flex;
         justify-content: center;
-        padding: 1rem;
+        padding: 1rem 26rem;
         
         & .glider-contain {
             margin-top: 15px;
@@ -210,8 +270,14 @@
                 }
             }
 
-            & .glider-prev, .glider-next {
-                color: #c7c725a6;
+            // & .glider-prev, .glider-next {
+            //     color: #c7c725a6;
+            // }
+
+            & .glider-prev svg, .glider-next svg{
+                fill: #c7c725a6;
+                height: 40px;
+                width: 40px;
             }
 
             & .glider-prev:hover, .glider-next:hover {
@@ -230,7 +296,7 @@
 }
 
 .wrapper_lamp {
-    margin: 5rem;
+    padding: 5rem;
 
     & .wrapper {
         display: flex;

@@ -1,29 +1,28 @@
 // CABECALHO ====================
 
 .wrapper_cabecalho {
-    background-image: url("../IMG/background/background-cabecalho.jpg");
+    background-image: url("../IMG/Portfolio/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
+    background-attachment: fixed;
     
     & .background_banner {
-        background-color: rgba(12, 117, 121, 0.77);
+        background-color: rgba(0, 0, 0, 0.77);
         height: 100%;
 
         & .banner {
-            background-color: rgba(0, 0, 0, 0.64);
+            background-color: rgba(12, 117, 121, 0.77);
 
             & .menu {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 align-items: center;
 
                 & nav ul {
                     display: flex;
 
                     & li {
-                        // padding: 3.125rem 1.875rem;
-
                         & a {
                             text-decoration: none;
                             color: $font-color-secundaria;
@@ -34,79 +33,124 @@
                         }
                     }
                 }
-                & .icones_redes_sociais a {
+                & .icones_redes_sociais {
+                    display: flex;
+                    align-items: center;
+
+                    & p {
+                        font-family: "Kalam";
+                        font-weight: bold;
+                        color: $font-color-secundaria;
+                    }
+                    
+                    & .icones {
+                        & a {
                         text-decoration: none;
+                        background: #449598;
+                        padding: 17px 15px 10px 15px;
+                        border-radius: 50%;
+                        margin: .5rem;
+                        // transition: all 1s ease;
+                            
+                            & svg {
+                                width: 20px;
+                                height: 20px;
+                            }
 
-                    & svg {
-                        width: 30px;
-                        height: 30px;
-                    }
+                            & path {
+                                fill: $font-color;
+                                // transition: all 1s ease;
+                            }
 
-                    & path {
-                        fill: $font-color;
-                    }
+                            // & :hover path {
+                            //     fill: $font-color-terceira;
+                            //     transition: all 1s ease;
+                            // }
+                        }
+
+                        // & a:hover {
+                        //     background: $font-color;
+                        //     transition: all 1s ease;
+                        // }
+                    }   
                 }
             }
         }
 
         & .titulo_modelo {
             text-align: center;
-            margin: 10rem 0rem;
-
-            & .wrapper h2::after {
-                content: "";
-                border-bottom: 5px solid #FFF;
-                display: block;
-                width: 10rem;
-                max-width: 90%;
-                margin: 0 auto;
-                margin-top: 1rem;
-                border-radius: 1rem;
-            }
+            padding: 8rem 0rem;
+            background-color: rgba(12, 117, 121, 0.77);
 
             & .wrapper h2 {
-               font-size: 3rem;
-               font-family: Segoe Print;
+               font-size: 4rem;
+               font-family: "Montserrat";
                color: $font-color;
                text-transform: uppercase;
+               font-weight: 900;
 
                & span {
                    display: block;
-                   font-family: Segoe UI;
+                   font-family:"Montserrat";
                    color: $font-color-secundaria;;
                }
             }
         }
 
         & .rodape_cabecalho {
-           background-color:  rgba(0, 0, 0, 0.64);
+        background-color: rgba(12, 117, 121, 0.77);
 
            & .wrapper {
                 padding: 3rem 0rem;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                width: 50%;
+                flex-flow: column;
+                background: rgba(12, 117, 121, 0.77);
 
                 & div {
-                    width: 50%;
                     color: $font-color-secundaria;
+                    padding: 2rem;
 
                     & h3 {
-                        font-size: 2rem;
+                        font-size: 1.9rem;
                         text-transform: uppercase;
                         text-align: center;
-                        line-height: 2.5rem;
+                        line-height: 2.3rem;
+                        font-family: "Montserrat";
+                        text-align: center;
 
                      & span {
-                         font-family: Segoe Print;
                          color: $font-color;
+                         font-weight: 800;
+                        }
+                    }
+                }
+                
+                & .rodape_cabecalho_texto {
+                    display: flex;
+                    align-items: center;
+                    padding: .8rem 2rem;
+
+                    & figure {
+                        padding-right: 1rem;
+
+                        & svg {
+                            height: 2.5rem;
+                            width: 2.5rem;
+
+                            & path {
+                                fill: $font-color;
+                            }
                         }
                     }
 
                     & p {
-                        text-align: right;
+                        text-align: left;
                         font-size: 1.5rem;
                         font-weight: normal;
+                        padding: .5rem 0;
                     }
                 }
             }
