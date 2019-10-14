@@ -25,5 +25,16 @@ nav ul li a:hover::after {
     width: 100%; 
     left: 0; 
 }
-
 // Fim animação link menu
+
+// Animação icone cabecalho linkedin
+
+.wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais .icones a:hover {
+    background: $font-color;
+    transition:  all .2s ease;
+}
+
+.wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais .icones a:hover path {
+    fill: $font-color-terceira;
+    transition: all .2s ease;
+}

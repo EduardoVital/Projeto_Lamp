@@ -387,16 +387,15 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2rem;
-  font-family: "Montserrat";
-  font-weight: bold;
 }
 .wrapper_servicos .titulo_modelo_dois h3 span {
+  font-family: Segoe Print;
   color: #FFE01B;
 }
 .wrapper_servicos .wrapper-grid {
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  grid-gap: 4rem 3rem;
+  grid-gap: 4rem 1rem;
   padding-bottom: 5rem;
   justify-content: center;
 }
@@ -405,12 +404,11 @@ body {
   grid-template-rows: 220px 80px 130px;
   align-items: center;
   background: #FFF;
-  border-radius: 10px;
 }
 .wrapper_servicos .wrapper-grid div figure {
   border-radius: 100%;
   padding: 2.5rem;
-  border: 5px solid #449598;
+  background: #f3db46;
   justify-self: center;
 }
 .wrapper_servicos .wrapper-grid div #Capa_1, .wrapper_servicos .wrapper-grid div #Layer_1 {
@@ -441,52 +439,49 @@ body {
   background-attachment: fixed;
 }
 .wrapper_orcamento_projeto .background_banner {
-  background: rgba(0, 0, 0, 0.77);
-}
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario {
   background: rgba(12, 117, 121, 0.77);
   height: 100%;
 }
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .titulo_modelo_dois {
+.wrapper_orcamento_projeto .background_banner .titulo_modelo_dois {
   text-align: center;
   padding-top: 5rem;
 }
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .titulo_modelo_dois h3 {
+.wrapper_orcamento_projeto .background_banner .titulo_modelo_dois h3 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2rem;
   color: #FFF;
   line-height: 2.3rem;
 }
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .titulo_modelo_dois h3 span {
+.wrapper_orcamento_projeto .background_banner .titulo_modelo_dois h3 span {
   font-family: Segoe Print;
   color: #FFE01B;
   display: block;
 }
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content {
+.wrapper_orcamento_projeto .background_banner .orcamento_projeto_content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 1rem 0rem 5rem 0rem;
 }
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content div {
+.wrapper_orcamento_projeto .background_banner .orcamento_projeto_content div {
   width: 50%;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content div h2 {
+.wrapper_orcamento_projeto .background_banner .orcamento_projeto_content div h2 {
   color: #FFF;
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
 }
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content div p {
+.wrapper_orcamento_projeto .background_banner .orcamento_projeto_content div p {
   color: #FFF;
   font-size: 1.5rem;
   text-align: center;
 }
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content div figure {
+.wrapper_orcamento_projeto .background_banner .orcamento_projeto_content div figure {
   border-radius: 5.5rem;
   padding: 3rem 3.3rem;
   box-shadow: 3px 3px 6px #FFE01B;
@@ -494,7 +489,7 @@ body {
   background: #FFF;
   width: fit-content;
 }
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content div figure img {
+.wrapper_orcamento_projeto .background_banner .orcamento_projeto_content div figure img {
   height: 5rem;
   width: 5rem;
 }
@@ -901,4 +896,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos.css4.map */
