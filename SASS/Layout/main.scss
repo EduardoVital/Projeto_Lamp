@@ -60,7 +60,8 @@
 //     }
 
 .wrapper_servicos {
-    background: #efefef;
+    // background: #efefef;
+    background: $font-color-secundaria;
 
     & .titulo_modelo_dois {
         text-align: center;
@@ -78,14 +79,15 @@
         // }
 
         & h3 {
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 2rem;
+            // text-transform: uppercase;
+            // font-weight: bold;
+            // font-size: 2rem;
+            font-size: 3rem;
             font-family: "Montserrat";
-            font-weight: bold;
+            font-weight: 100;
 
             & span {
-                color: $font-color;
+                color: #449598;
             }
         }
     }
@@ -99,21 +101,32 @@
 
         & div {
             display: grid;
-            grid-template-rows: 220px 80px 130px;
+            grid-template-rows: 220px 60px 110px;
             align-items: center;
             background: $font-color-secundaria;
-            border-radius: 10px;
 
             & figure {
                 border-radius: 100%;
-                padding: 2.5rem;
-                border: 5px solid #449598;
+                padding: 1.5rem;
+                // border: 5px solid #449598;
+                border: 5px solid  #c5dbf2;
                 justify-self: center;
+                // background: #449598;
+                background:  #c5dbf2;
+                // box-shadow: 1px 1px 20px #449598;
+                box-shadow: 1px 1px 20px #c5dbf2;
                 }
 
                 & #Capa_1, & #Layer_1 {
                     height: 7rem;
                     width: 7rem;
+
+                    & path {
+                        fill: $font-color-terceira;
+                    }
+                    & rect {
+                        fill: $font-color-terceira;
+                    }
                 }
             }
 
@@ -131,7 +144,7 @@
                 font-size: 0.875rem;
                 padding: 0 1rem;
                 line-height: 1.2rem;
-                color: black;
+                color: $font-color-terceira;
             }
         }
     }

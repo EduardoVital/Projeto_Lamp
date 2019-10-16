@@ -17,11 +17,6 @@
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(../FONTS/AdventPro/AdventPro-Bold.ttf);
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Montserrat";
   src: url(../FONTS/Montserrat/Montserrat-Bold.ttf);
   font-weight: 700;
 }
@@ -377,21 +372,19 @@ body {
 }
 
 .wrapper_servicos {
-  background: #efefef;
+  background: #FFF;
 }
 .wrapper_servicos .titulo_modelo_dois {
   text-align: center;
   padding: 5rem 0rem;
 }
 .wrapper_servicos .titulo_modelo_dois h3 {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Montserrat";
-  font-weight: bold;
+  font-weight: 100;
 }
 .wrapper_servicos .titulo_modelo_dois h3 span {
-  color: #FFE01B;
+  color: #449598;
 }
 .wrapper_servicos .wrapper-grid {
   display: grid;
@@ -402,20 +395,27 @@ body {
 }
 .wrapper_servicos .wrapper-grid div {
   display: grid;
-  grid-template-rows: 220px 80px 130px;
+  grid-template-rows: 220px 60px 110px;
   align-items: center;
   background: #FFF;
-  border-radius: 10px;
 }
 .wrapper_servicos .wrapper-grid div figure {
   border-radius: 100%;
-  padding: 2.5rem;
-  border: 5px solid #449598;
+  padding: 1.5rem;
+  border: 5px solid #c5dbf2;
   justify-self: center;
+  background: #c5dbf2;
+  box-shadow: 1px 1px 20px #c5dbf2;
 }
 .wrapper_servicos .wrapper-grid div #Capa_1, .wrapper_servicos .wrapper-grid div #Layer_1 {
   height: 7rem;
   width: 7rem;
+}
+.wrapper_servicos .wrapper-grid div #Capa_1 path, .wrapper_servicos .wrapper-grid div #Layer_1 path {
+  fill: #000;
+}
+.wrapper_servicos .wrapper-grid div #Capa_1 rect, .wrapper_servicos .wrapper-grid div #Layer_1 rect {
+  fill: #000;
 }
 .wrapper_servicos .wrapper-grid p {
   text-align: center;
@@ -430,7 +430,7 @@ body {
   font-size: 0.875rem;
   padding: 0 1rem;
   line-height: 1.2rem;
-  color: black;
+  color: #000;
 }
 
 .wrapper_orcamento_projeto {
