@@ -8,12 +8,32 @@
   font-weight: 700;
 }
 @font-face {
-  font-family: "Didact Gothic";
-  src: url(../FONTS/DidactGothic/DidactGothic-Regular.ttf);
+  font-family: "Nunito Sans";
+  src: url(../FONTS/NunitoSans/NunitoSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url(/FONTS/NunitoSans/NunitoSans-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url(/FONTS/NunitoSans/NunitoSans-Bold.ttf);
+  font-weight: 700;
 }
 @font-face {
   font-family: "Montserrat";
   src: url(../FONTS/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../FONTS/Montserrat/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../FONTS/Montserrat/Montserrat-Medium.ttf);
+  font-weight: 500;
 }
 @font-face {
   font-family: "Montserrat";
@@ -241,7 +261,7 @@ nav ul li a:hover::after {
 }
 
 body {
-  font-family: "Didact Gothic", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .wrapper_cabecalho {
@@ -376,7 +396,7 @@ body {
 }
 .wrapper_servicos .titulo_modelo_dois {
   text-align: center;
-  padding: 5rem 0rem;
+  padding: 3rem 0rem;
 }
 .wrapper_servicos .titulo_modelo_dois h3 {
   font-size: 3rem;
@@ -389,13 +409,13 @@ body {
 .wrapper_servicos .wrapper-grid {
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  grid-gap: 4rem 3rem;
+  grid-gap: 2rem 2rem;
   padding-bottom: 5rem;
   justify-content: center;
 }
 .wrapper_servicos .wrapper-grid div {
   display: grid;
-  grid-template-rows: 220px 60px 110px;
+  grid-template-rows: 150px 65px 140px;
   align-items: center;
   background: #FFF;
 }
@@ -408,8 +428,8 @@ body {
   box-shadow: 1px 1px 20px #c5dbf2;
 }
 .wrapper_servicos .wrapper-grid div #Capa_1, .wrapper_servicos .wrapper-grid div #Layer_1 {
-  height: 7rem;
-  width: 7rem;
+  height: 5rem;
+  width: 5rem;
 }
 .wrapper_servicos .wrapper-grid div #Capa_1 path, .wrapper_servicos .wrapper-grid div #Layer_1 path {
   fill: #000;
@@ -420,17 +440,19 @@ body {
 .wrapper_servicos .wrapper-grid p {
   text-align: center;
   font-size: 1.3rem;
-  font-weight: 800;
+  font-weight: 600;
   color: #449598;
   font-family: "Montserrat";
   padding: 0 1rem;
 }
 .wrapper_servicos .wrapper-grid .texto_servicos {
-  font-family: "Didact Gothic";
-  font-size: 0.875rem;
+  font-family: "Nunito Sans";
+  font-size: 0.9375rem;
   padding: 0 1rem;
   line-height: 1.2rem;
   color: #000;
+  align-self: flex-start;
+  font-weight: 600;
 }
 
 .wrapper_orcamento_projeto {

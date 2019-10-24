@@ -1,82 +1,11 @@
 // MAIN ====================
-
-// .rodape_cabecalho {
-//     background-color: rgba(12, 117, 121, 0.77);
-
-//        & .wrapper {
-//             padding: 3rem 0rem;
-//             display: flex;
-//             justify-content: space-between;
-//             align-items: center;
-//             width: 50%;
-//             flex-flow: column;
-//             background: rgba(12, 117, 121, 0.77);
-
-//             & div {
-//                 color: $font-color-secundaria;
-//                 padding: 2rem;
-
-//                 & h3 {
-//                     font-size: 1.9rem;
-//                     text-transform: uppercase;
-//                     text-align: center;
-//                     line-height: 2.3rem;
-//                     font-family: "Montserrat";
-//                     text-align: center;
-
-//                  & span {
-//                      color: $font-color;
-//                      font-weight: 800;
-//                     }
-//                 }
-//             }
-            
-//             & .rodape_cabecalho_texto {
-//                 display: flex;
-//                 align-items: center;
-//                 padding: .8rem 2rem;
-
-//                 & figure {
-//                     padding-right: 1rem;
-
-//                     & svg {
-//                         height: 2.5rem;
-//                         width: 2.5rem;
-
-//                         & path {
-//                             fill: $font-color;
-//                         }
-//                     }
-//                 }
-
-//                 & p {
-//                     text-align: left;
-//                     font-size: 1.5rem;
-//                     font-weight: normal;
-//                     padding: .5rem 0;
-//                 }
-//             }
-//         }
-//     }
-
 .wrapper_servicos {
     // background: #efefef;
     background: $font-color-secundaria;
 
     & .titulo_modelo_dois {
         text-align: center;
-        padding: 5rem 0rem;
-
-        // & h3::after {
-        //     content: "";
-        //     border-bottom: 5px solid $font-color;
-        //     display: block;
-        //     width: 10rem;
-        //     max-width: 90%;
-        //     margin: 0 auto;
-        //     margin-top: 1rem;
-        //     border-radius: 1rem;
-        // }
+        padding: 3rem 0rem;
 
         & h3 {
             // text-transform: uppercase;
@@ -95,13 +24,15 @@
     & .wrapper-grid {
         display: grid;
         grid-template-columns: 30% 30% 30%;
-        grid-gap: 4rem 3rem;
+        grid-gap: 2rem 2rem;
+        // grid-gap: 4rem 3rem;
         padding-bottom: 5rem;
         justify-content: center;
 
         & div {
             display: grid;
-            grid-template-rows: 220px 60px 110px;
+            grid-template-rows: 150px 65px 140px;
+            // grid-template-rows: 220px 60px 110px;
             align-items: center;
             background: $font-color-secundaria;
 
@@ -118,8 +49,10 @@
                 }
 
                 & #Capa_1, & #Layer_1 {
-                    height: 7rem;
-                    width: 7rem;
+                    // height: 7rem;
+                    // width: 7rem;
+                    height: 5rem;
+                    width: 5rem;
 
                     & path {
                         fill: $font-color-terceira;
@@ -133,18 +66,21 @@
             & p {
                 text-align: center;
                 font-size: 1.3rem;
-                font-weight: 800;
+                font-weight: 600;
                 color: #449598;
                 font-family: "Montserrat";
                 padding: 0 1rem;
             }
 
             & .texto_servicos {
-                font-family: "Didact Gothic";
-                font-size: 0.875rem;
+                font-family: "Nunito Sans";
+                // font-size: 0.875rem;
+                font-size: 0.9375rem;
                 padding: 0 1rem;
                 line-height: 1.2rem;
                 color: $font-color-terceira;
+                align-self: flex-start;
+                font-weight: 600;
             }
         }
     }
@@ -169,17 +105,6 @@
                 text-align: center;
                 padding-top: 5rem;
 
-                // & h3::after {
-                //     content: "";
-                //     border-bottom: 5px solid $font-color;
-                //     display: block;
-                //     width: 10rem;
-                //     max-width: 90%;
-                //     margin: 0 auto;
-                //     margin-top: 1rem;
-                //     border-radius: 1rem;
-                // }
-        
                 & h3 {
                     text-transform: uppercase;
                     font-weight: bold;

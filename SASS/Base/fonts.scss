@@ -11,13 +11,37 @@
 }
 
 @font-face {
-    font-family: "Didact Gothic";
-    src: url(../FONTS/DidactGothic/DidactGothic-Regular.ttf);
+    font-family: "Nunito Sans";
+    src: url(../FONTS/NunitoSans/NunitoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url(/FONTS/NunitoSans/NunitoSans-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url(/FONTS/NunitoSans/NunitoSans-Bold.ttf);
+    font-weight: 700;
 }
 
 @font-face {
     font-family: "Montserrat";
     src: url(../FONTS/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../FONTS/Montserrat/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../FONTS/Montserrat/Montserrat-Medium.ttf);
+    font-weight: 500;
 }
 
 @font-face {
