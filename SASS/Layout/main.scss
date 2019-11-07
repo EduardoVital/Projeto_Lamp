@@ -1,6 +1,5 @@
 // MAIN ====================
 .wrapper_servicos {
-    // background: #efefef;
     background: $font-color-secundaria;
 
     & .titulo_modelo_dois {
@@ -8,9 +7,6 @@
         padding: 3rem 0rem;
 
         & h3 {
-            // text-transform: uppercase;
-            // font-weight: bold;
-            // font-size: 2rem;
             font-size: 3rem;
             font-family: "Montserrat";
             font-weight: 100;
@@ -24,63 +20,65 @@
     & .wrapper-grid {
         display: grid;
         grid-template-columns: 30% 30% 30%;
-        grid-gap: 2rem 2rem;
-        // grid-gap: 4rem 3rem;
+        grid-gap: 4rem 4rem;
         padding-bottom: 5rem;
         justify-content: center;
 
         & div {
             display: grid;
-            grid-template-rows: 150px 65px 140px;
-            // grid-template-rows: 220px 60px 110px;
+            grid-template-rows: 100px 70px 155px;
             align-items: center;
             background: $font-color-secundaria;
 
             & figure {
-                border-radius: 100%;
-                padding: 1.5rem;
-                // border: 5px solid #449598;
-                border: 5px solid  #c5dbf2;
-                justify-self: center;
-                // background: #449598;
-                background:  #c5dbf2;
-                // box-shadow: 1px 1px 20px #449598;
-                box-shadow: 1px 1px 20px #c5dbf2;
+                justify-self: flex-start;
                 }
 
-                & #Capa_1, & #Layer_1 {
-                    // height: 7rem;
-                    // width: 7rem;
-                    height: 5rem;
-                    width: 5rem;
+                & #Layer_1 {
+                    height: 4rem;
+                    width: 4rem;
+
+                    & rect {
+                        // fill: $font-color-terceira;
+                        fill: #af9a16;
+                    }
 
                     & path {
-                        fill: $font-color-terceira;
+                        // fill: $font-color-terceira;
+                        fill: #af9a16;
                     }
-                    & rect {
-                        fill: $font-color-terceira;
+
+                    & polygon {
+                        fill: #af9a16;
                     }
                 }
             }
 
-            & p {
-                text-align: center;
+            & .texto_titulo_servicos {
                 font-size: 1.3rem;
                 font-weight: 600;
                 color: #449598;
                 font-family: "Montserrat";
-                padding: 0 1rem;
+                align-self: flex-start;
+                text-transform: uppercase;
+            }
+
+            & .texto_titulo_servicos::after {
+                content: '';
+                border-bottom: 5px solid #449598;
+                display: block;
+                padding-top: 0.8rem;
+                width: 15%;
             }
 
             & .texto_servicos {
                 font-family: "Nunito Sans";
-                // font-size: 0.875rem;
-                font-size: 0.9375rem;
-                padding: 0 1rem;
-                line-height: 1.2rem;
+                font-size: 0.9rem;
+                line-height: 1.5625rem;
                 color: $font-color-terceira;
                 align-self: flex-start;
                 font-weight: 600;
+               
             }
         }
     }
@@ -97,7 +95,6 @@
         background:rgba(0, 0, 0, 0.77);
 
         & .background_banner_secundario {
-            // background-color: rgba(12, 117, 121, 0.77);
             background: rgba(12, 117, 121, 0.77);
             height: 100%;
 
@@ -289,3 +286,4 @@
         }
     }
 }
+

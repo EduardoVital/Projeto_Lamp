@@ -26,16 +26,19 @@
                         & a {
                             text-decoration: none;
                             color: $font-color-secundaria;
-                            font-size: 1rem;
+                            font-size: 0.8rem;
                             text-transform: uppercase;
                             position: relative;
                             padding: 0.8rem;
+                            font-weight: 700;
+                            letter-spacing: 0.25rem;
                         }
                     }
                 }
                 & .icones_redes_sociais {
-                    display: flex;
-                    align-items: center;
+                    display: none;
+                    // display: flex;
+                    // align-items: center;
 
                     & p {
                         font-family: "Kalam";
@@ -69,7 +72,7 @@
 
         & .titulo_modelo {
             text-align: center;
-            padding: 8rem 0rem;
+            padding: 8rem 0rem 2rem;
             background-color: rgba(12, 117, 121, 0.77);
 
             & .wrapper h2 {
@@ -85,35 +88,39 @@
                    color: $font-color-secundaria;;
                }
             }
+
+            & .wrapper h2::after {
+                content: "";
+                border-bottom: 2px solid #ffe01b;
+                width: 20%;
+                display: block;
+                margin: 0 auto;
+                padding-top: 2.5rem;
+            }
         }
 
         & .rodape_cabecalho {
         background-color: rgba(12, 117, 121, 0.77);
 
            & .wrapper {
-                padding: 3rem 0rem;
+                padding: 4rem 0rem;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                width: 50%;
+                width: 65%;
                 flex-flow: column;
-                background: rgba(12, 117, 121, 0.77);
 
                 & div {
                     color: $font-color-secundaria;
                     padding: 2rem;
 
-                    & h3 {
-                        font-size: 1.9rem;
-                        text-transform: uppercase;
+                    & p{
+                        font-size: 1.5rem;
                         text-align: center;
-                        line-height: 2.3rem;
-                        font-family: "Montserrat";
-                        text-align: center;
+                        line-height: 1.8rem;
 
-                     & span {
-                         color: $font-color;
-                         font-weight: 800;
+                        & span {
+                            color: $font-color;
                         }
                     }
                 }

@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Kalam";
   src: url(../FONTS/Kalam/Kalam-Regular.ttf);
+  font-weight: 400;
 }
 @font-face {
   font-family: "Kalam";
@@ -10,20 +11,22 @@
 @font-face {
   font-family: "Nunito Sans";
   src: url(../FONTS/NunitoSans/NunitoSans-Regular.ttf);
+  font-weight: 400;
 }
 @font-face {
   font-family: "Nunito Sans";
-  src: url(/FONTS/NunitoSans/NunitoSans-SemiBold.ttf);
+  src: url(../FONTS/NunitoSans/NunitoSans-SemiBold.ttf);
   font-weight: 600;
 }
 @font-face {
   font-family: "Nunito Sans";
-  src: url(/FONTS/NunitoSans/NunitoSans-Bold.ttf);
+  src: url(../FONTS/NunitoSans/NunitoSans-Bold.ttf);
   font-weight: 700;
 }
 @font-face {
   font-family: "Montserrat";
   src: url(../FONTS/Montserrat/Montserrat-Regular.ttf);
+  font-weight: 400;
 }
 @font-face {
   font-family: "Montserrat";
@@ -289,14 +292,15 @@ body {
 .wrapper_cabecalho .background_banner .banner .menu nav ul li a {
   text-decoration: none;
   color: #FFF;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   position: relative;
   padding: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.25rem;
 }
 .wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais {
-  display: flex;
-  align-items: center;
+  display: none;
 }
 .wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais p {
   font-family: "Kalam";
@@ -321,7 +325,7 @@ body {
 }
 .wrapper_cabecalho .background_banner .titulo_modelo {
   text-align: center;
-  padding: 8rem 0rem;
+  padding: 8rem 0rem 2rem;
   background-color: rgba(12, 117, 121, 0.77);
 }
 .wrapper_cabecalho .background_banner .titulo_modelo .wrapper h2 {
@@ -336,33 +340,36 @@ body {
   font-family: "Montserrat";
   color: #FFF;
 }
+.wrapper_cabecalho .background_banner .titulo_modelo .wrapper h2::after {
+  content: "";
+  border-bottom: 2px solid #ffe01b;
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+}
 .wrapper_cabecalho .background_banner .rodape_cabecalho {
   background-color: rgba(12, 117, 121, 0.77);
 }
 .wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper {
-  padding: 3rem 0rem;
+  padding: 4rem 0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 65%;
   flex-flow: column;
-  background: rgba(12, 117, 121, 0.77);
 }
 .wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper div {
   color: #FFF;
   padding: 2rem;
 }
-.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper div h3 {
-  font-size: 1.9rem;
-  text-transform: uppercase;
+.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper div p {
+  font-size: 1.5rem;
   text-align: center;
-  line-height: 2.3rem;
-  font-family: "Montserrat";
-  text-align: center;
+  line-height: 1.8rem;
 }
-.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper div h3 span {
+.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper div p span {
   color: #FFE01B;
-  font-weight: 800;
 }
 .wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper .rodape_cabecalho_texto {
   display: flex;
@@ -409,47 +416,51 @@ body {
 .wrapper_servicos .wrapper-grid {
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  grid-gap: 2rem 2rem;
+  grid-gap: 4rem 4rem;
   padding-bottom: 5rem;
   justify-content: center;
 }
 .wrapper_servicos .wrapper-grid div {
   display: grid;
-  grid-template-rows: 150px 65px 140px;
+  grid-template-rows: 100px 70px 155px;
   align-items: center;
   background: #FFF;
 }
 .wrapper_servicos .wrapper-grid div figure {
-  border-radius: 100%;
-  padding: 1.5rem;
-  border: 5px solid #c5dbf2;
-  justify-self: center;
-  background: #c5dbf2;
-  box-shadow: 1px 1px 20px #c5dbf2;
+  justify-self: flex-start;
 }
-.wrapper_servicos .wrapper-grid div #Capa_1, .wrapper_servicos .wrapper-grid div #Layer_1 {
-  height: 5rem;
-  width: 5rem;
+.wrapper_servicos .wrapper-grid div #Layer_1 {
+  height: 4rem;
+  width: 4rem;
 }
-.wrapper_servicos .wrapper-grid div #Capa_1 path, .wrapper_servicos .wrapper-grid div #Layer_1 path {
-  fill: #000;
+.wrapper_servicos .wrapper-grid div #Layer_1 rect {
+  fill: #af9a16;
 }
-.wrapper_servicos .wrapper-grid div #Capa_1 rect, .wrapper_servicos .wrapper-grid div #Layer_1 rect {
-  fill: #000;
+.wrapper_servicos .wrapper-grid div #Layer_1 path {
+  fill: #af9a16;
 }
-.wrapper_servicos .wrapper-grid p {
-  text-align: center;
+.wrapper_servicos .wrapper-grid div #Layer_1 polygon {
+  fill: #af9a16;
+}
+.wrapper_servicos .wrapper-grid .texto_titulo_servicos {
   font-size: 1.3rem;
   font-weight: 600;
   color: #449598;
   font-family: "Montserrat";
-  padding: 0 1rem;
+  align-self: flex-start;
+  text-transform: uppercase;
+}
+.wrapper_servicos .wrapper-grid .texto_titulo_servicos::after {
+  content: "";
+  border-bottom: 5px solid #449598;
+  display: block;
+  padding-top: 0.8rem;
+  width: 15%;
 }
 .wrapper_servicos .wrapper-grid .texto_servicos {
   font-family: "Nunito Sans";
-  font-size: 0.9375rem;
-  padding: 0 1rem;
-  line-height: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.5625rem;
   color: #000;
   align-self: flex-start;
   font-weight: 600;
