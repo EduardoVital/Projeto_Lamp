@@ -434,13 +434,13 @@ body {
   width: 4rem;
 }
 .wrapper_servicos .wrapper-grid div #Layer_1 rect {
-  fill: #af9a16;
+  fill: #0a5b5e;
 }
 .wrapper_servicos .wrapper-grid div #Layer_1 path {
-  fill: #af9a16;
+  fill: #0a5b5e;
 }
 .wrapper_servicos .wrapper-grid div #Layer_1 polygon {
-  fill: #af9a16;
+  fill: #0a5b5e;
 }
 .wrapper_servicos .wrapper-grid .texto_titulo_servicos {
   font-size: 1.3rem;
@@ -466,35 +466,8 @@ body {
   font-weight: 600;
 }
 
-.wrapper_orcamento_projeto {
-  background: url("../IMG/Background/planta.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
 .wrapper_orcamento_projeto .background_banner {
-  background: rgba(0, 0, 0, 0.77);
-}
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario {
-  background: rgba(12, 117, 121, 0.77);
-  height: 100%;
-}
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .titulo_modelo_dois {
-  text-align: center;
-  padding-top: 5rem;
-}
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .titulo_modelo_dois h3 {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 2rem;
-  color: #FFF;
-  line-height: 2.3rem;
-}
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .titulo_modelo_dois h3 span {
-  font-family: Segoe Print;
-  color: #FFE01B;
-  display: block;
+  background: #ffe500bf;
 }
 .wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content {
   display: flex;
@@ -509,27 +482,26 @@ body {
   justify-content: center;
   align-items: center;
 }
+.wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content div h3 {
+  font-size: 3rem;
+  font-family: "Montserrat";
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content div h3 span {
+  color: #449598;
+}
 .wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content div h2 {
-  color: #FFF;
+  color: #000;
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
 }
 .wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content div p {
-  color: #FFF;
+  color: #000;
   font-size: 1.5rem;
   text-align: center;
-}
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content div figure {
-  border-radius: 5.5rem;
-  padding: 3rem 3.3rem;
-  box-shadow: 3px 3px 6px #FFE01B;
-  margin-bottom: 2rem;
-  background: #FFF;
-  width: fit-content;
-}
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content div figure img {
-  height: 5rem;
-  width: 5rem;
+  line-height: 1.8rem;
 }
 
 .titulo_carrousel .titulo_modelo_dois {

@@ -40,16 +40,16 @@
 
                     & rect {
                         // fill: $font-color-terceira;
-                        fill: #af9a16;
+                        fill: #0a5b5e;
                     }
 
                     & path {
                         // fill: $font-color-terceira;
-                        fill: #af9a16;
+                        fill: #0a5b5e;
                     }
 
                     & polygon {
-                        fill: #af9a16;
+                        fill: #0a5b5e;
                     }
                 }
             }
@@ -85,38 +85,10 @@
 
 
 .wrapper_orcamento_projeto {
-    background: url('../IMG/Background/planta.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
     & .background_banner {
-        background:rgba(0, 0, 0, 0.77);
+        background:#ffe500bf;
 
         & .background_banner_secundario {
-            background: rgba(12, 117, 121, 0.77);
-            height: 100%;
-
-            & .titulo_modelo_dois {
-                text-align: center;
-                padding-top: 5rem;
-
-                & h3 {
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    font-size: 2rem;
-                    color: $font-color-secundaria;
-                    line-height: 2.3rem;
-
-                    & span {
-                        font-family: Segoe Print;
-                        color: $font-color;
-                        display: block;
-                    }
-                }
-            }
-
             & .orcamento_projeto_content {
                 display: flex;
                 justify-content: space-between;
@@ -130,32 +102,30 @@
                     justify-content: center;
                     align-items: center;
 
+                    & h3 {
+                        font-size: 3rem;
+                        font-family: "Montserrat";
+                        font-weight: 100;
+                        text-align: center;
+                        margin-bottom: 3rem;
+
+                        & span {
+                            color: #449598;
+                        }
+                    }
+
                     & h2 {
-                        color: $font-color-secundaria;
+                        color: $font-color-terceira;
                         margin-bottom: 1.5rem;
                         font-size: 2.5rem;
                     }
 
                     & p {
-                        color: $font-color-secundaria;
+                        color: $font-color-terceira;
                         font-size: 1.5rem;
                         text-align: center;
+                        line-height: 1.8rem;
                     }
-
-                    & figure {
-                        border-radius: 5.5rem;
-                        padding: 3rem 3.3rem;
-                        box-shadow: 3px 3px 6px $font-color;
-                        margin-bottom: 2rem;
-                        background: $font-color-secundaria;
-                        width: fit-content;
-
-                        & img {
-                            height: 5rem;
-                            width: 5rem;
-                        }
-                    }
-
                 }
             }
         }
