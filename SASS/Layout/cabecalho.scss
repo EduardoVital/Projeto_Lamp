@@ -1,17 +1,17 @@
 // CABECALHO ====================
 
-.wrapper_cabecalho {
+.cabecalho {
     background-image: url("../IMG/Portfolio/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     
-    & .background_banner {
+    & .cabecalho__background {
         background-color: rgba(0, 0, 0, 0.77);
         height: 100%;
 
-        & .banner {
+        & .cabecalho__background--color {
             background-color: rgba(12, 117, 121, 0.77);
 
             & .menu {
@@ -19,7 +19,7 @@
                 justify-content: space-between;
                 align-items: center;
 
-                & nav ul {
+                & .menu__navbar ul {
                     display: flex;
 
                     & li {
@@ -35,7 +35,7 @@
                         }
                     }
                 }
-                & .icones_redes_sociais {
+                & .menu__icones {
                     display: none;
                     // display: flex;
                     // align-items: center;
@@ -46,7 +46,7 @@
                         color: $font-color-secundaria;
                     }
                     
-                    & .icones {
+                    & .menu__instagram {
                         & a {
                         text-decoration: none;
                         background: #449598;
@@ -70,7 +70,7 @@
             }
         }
 
-        & .titulo_modelo {
+        & .cabecalho__titulo {
             text-align: center;
             padding: 8rem 0rem 2rem;
             background-color: rgba(12, 117, 121, 0.77);
@@ -99,7 +99,7 @@
             }
         }
 
-        & .rodape_cabecalho {
+        & .cabecalho__rodape {
         background-color: rgba(12, 117, 121, 0.77);
 
            & .wrapper {
@@ -114,7 +114,7 @@
                     color: $font-color-secundaria;
                     padding: 2rem;
 
-                    & p{
+                    & p {
                         font-size: 1.5rem;
                         text-align: center;
                         line-height: 1.8rem;
@@ -122,32 +122,6 @@
                         & span {
                             color: $font-color;
                         }
-                    }
-                }
-                
-                & .rodape_cabecalho_texto {
-                    display: flex;
-                    align-items: center;
-                    padding: .8rem 2rem;
-
-                    & figure {
-                        padding-right: 1rem;
-
-                        & svg {
-                            height: 2.5rem;
-                            width: 2.5rem;
-
-                            & path {
-                                fill: $font-color;
-                            }
-                        }
-                    }
-
-                    & p {
-                        text-align: left;
-                        font-size: 1.5rem;
-                        font-weight: normal;
-                        padding: .5rem 0;
                     }
                 }
             }

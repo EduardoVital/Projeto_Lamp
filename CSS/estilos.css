@@ -111,14 +111,14 @@ table {
   width: 12.375rem;
 }
 
-.wrapper_formulario {
+.formulario {
   background: rgba(12, 117, 121, 0.77);
 }
-.wrapper_formulario .titulo_modelo_dois {
+.formulario .formulario__titulo {
   text-align: center;
   padding-top: 3rem;
 }
-.wrapper_formulario .titulo_modelo_dois h3::after {
+.formulario .formulario__titulo h3::after {
   content: "";
   border-bottom: 5px solid #000;
   display: block;
@@ -128,16 +128,16 @@ table {
   margin-top: 1rem;
   border-radius: 1rem;
 }
-.wrapper_formulario .titulo_modelo_dois h3 {
+.formulario .formulario__titulo h3 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2rem;
 }
-.wrapper_formulario .titulo_modelo_dois h3 span {
+.formulario .formulario__titulo h3 span {
   font-family: Segoe Print;
   color: #FFE01B;
 }
-.wrapper_formulario form {
+.formulario form {
   width: 60%;
   margin: 0 auto;
   display: flex;
@@ -145,20 +145,20 @@ table {
   align-items: center;
   justify-content: center;
 }
-.wrapper_formulario form .form_content {
+.formulario form .formulario__content {
   display: flex;
   align-items: center;
   margin-top: 2rem;
   width: 100%;
 }
-.wrapper_formulario form .form_content .form_box {
+.formulario form .formulario__content .formulario__container {
   width: 50%;
 }
-.wrapper_formulario form .form_content .form_box div {
+.formulario form .formulario__content .formulario__container div {
   text-align: left;
   position: relative;
 }
-.wrapper_formulario form .form_content .form_box div label {
+.formulario form .formulario__content .formulario__container div label {
   position: absolute;
   top: 8px;
   font-size: 15px;
@@ -169,12 +169,12 @@ table {
   background: #449598;
   color: #FFF;
 }
-.wrapper_formulario form .form_content .form_box div .active {
+.formulario form .formulario__content .formulario__container div .active {
   top: -15px;
   font-size: 15px;
   color: #FFE01B;
 }
-.wrapper_formulario form .form_content input {
+.formulario form .formulario__content input {
   width: 90%;
   padding: 0.8rem 0.6rem;
   margin: 0.4rem 0rem;
@@ -185,12 +185,12 @@ table {
   transition: all 0.2s ease;
   color: #FFF;
 }
-.wrapper_formulario form .form_content input:hover, .wrapper_formulario form .form_content input:focus {
+.formulario form .formulario__content input:hover, .formulario form .formulario__content input:focus {
   outline: none;
   border-color: #FFE01B;
   transition: all 0.2s ease;
 }
-.wrapper_formulario form .form_content textarea {
+.formulario form .formulario__content textarea {
   width: 90%;
   height: 4.59rem;
   padding: 0.8rem 0.6rem;
@@ -202,19 +202,19 @@ table {
   transition: all 0.2s ease;
   color: #FFF;
 }
-.wrapper_formulario form .form_content textarea:hover, .wrapper_formulario form .form_content textarea:focus {
+.formulario form .formulario__content textarea:hover, .formulario form .formulario__content textarea:focus {
   outline: none;
   border-color: #FFE01B;
   transition: all 0.2s ease;
 }
-.wrapper_formulario form .form_content ::placeholder {
+.formulario form .formulario__content ::placeholder {
   color: #FFF;
   font-family: Segoe UI;
 }
-.wrapper_formulario form .form_content_button {
+.formulario form .formulario__btn {
   margin-bottom: 2rem;
 }
-.wrapper_formulario form .form_content_button input[type=submit] {
+.formulario form .formulario__btn input[type=submit] {
   margin-top: 0.5rem;
   padding: 1rem 4rem;
   display: flex;
@@ -227,7 +227,7 @@ table {
   transition: all 0.2s ease;
   color: #000;
 }
-.wrapper_formulario form .form_content_button input[type=submit]:hover {
+.formulario form .formulario__btn input[type=submit]:hover {
   background-color: #FFE01B;
   box-shadow: 0px 0px 12px 0px #FFE500;
   transition: all 0.2s ease;
@@ -267,29 +267,33 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 
-.wrapper_cabecalho {
+.titulos__formato {
+  font-size: 3rem;
+}
+
+.cabecalho {
   background-image: url("../IMG/Portfolio/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-.wrapper_cabecalho .background_banner {
+.cabecalho .cabecalho__background {
   background-color: rgba(0, 0, 0, 0.77);
   height: 100%;
 }
-.wrapper_cabecalho .background_banner .banner {
+.cabecalho .cabecalho__background .cabecalho__background--color {
   background-color: rgba(12, 117, 121, 0.77);
 }
-.wrapper_cabecalho .background_banner .banner .menu {
+.cabecalho .cabecalho__background .cabecalho__background--color .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.wrapper_cabecalho .background_banner .banner .menu nav ul {
+.cabecalho .cabecalho__background .cabecalho__background--color .menu .menu__navbar ul {
   display: flex;
 }
-.wrapper_cabecalho .background_banner .banner .menu nav ul li a {
+.cabecalho .cabecalho__background .cabecalho__background--color .menu .menu__navbar ul li a {
   text-decoration: none;
   color: #FFF;
   font-size: 0.8rem;
@@ -299,15 +303,15 @@ body {
   font-weight: 700;
   letter-spacing: 0.25rem;
 }
-.wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais {
+.cabecalho .cabecalho__background .cabecalho__background--color .menu .menu__icones {
   display: none;
 }
-.wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais p {
+.cabecalho .cabecalho__background .cabecalho__background--color .menu .menu__icones p {
   font-family: "Kalam";
   font-weight: bold;
   color: #FFF;
 }
-.wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais .icones a {
+.cabecalho .cabecalho__background .cabecalho__background--color .menu .menu__icones .menu__instagram a {
   text-decoration: none;
   background: #449598;
   padding: 17px 15px 10px 15px;
@@ -315,32 +319,32 @@ body {
   margin: 0.5rem;
   transition: all 0.2s ease;
 }
-.wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais .icones a svg {
+.cabecalho .cabecalho__background .cabecalho__background--color .menu .menu__icones .menu__instagram a svg {
   width: 20px;
   height: 20px;
 }
-.wrapper_cabecalho .background_banner .banner .menu .icones_redes_sociais .icones a path {
+.cabecalho .cabecalho__background .cabecalho__background--color .menu .menu__icones .menu__instagram a path {
   fill: #FFE01B;
   transition: all 0.2s ease;
 }
-.wrapper_cabecalho .background_banner .titulo_modelo {
+.cabecalho .cabecalho__background .cabecalho__titulo {
   text-align: center;
   padding: 8rem 0rem 2rem;
   background-color: rgba(12, 117, 121, 0.77);
 }
-.wrapper_cabecalho .background_banner .titulo_modelo .wrapper h2 {
+.cabecalho .cabecalho__background .cabecalho__titulo .wrapper h2 {
   font-size: 4rem;
   font-family: "Montserrat";
   color: #FFE01B;
   text-transform: uppercase;
   font-weight: 900;
 }
-.wrapper_cabecalho .background_banner .titulo_modelo .wrapper h2 span {
+.cabecalho .cabecalho__background .cabecalho__titulo .wrapper h2 span {
   display: block;
   font-family: "Montserrat";
   color: #FFF;
 }
-.wrapper_cabecalho .background_banner .titulo_modelo .wrapper h2::after {
+.cabecalho .cabecalho__background .cabecalho__titulo .wrapper h2::after {
   content: "";
   border-bottom: 2px solid #ffe01b;
   width: 20%;
@@ -348,10 +352,10 @@ body {
   margin: 0 auto;
   padding-top: 2.5rem;
 }
-.wrapper_cabecalho .background_banner .rodape_cabecalho {
+.cabecalho .cabecalho__background .cabecalho__rodape {
   background-color: rgba(12, 117, 121, 0.77);
 }
-.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper {
+.cabecalho .cabecalho__background .cabecalho__rodape .wrapper {
   padding: 4rem 0rem;
   display: flex;
   justify-content: space-between;
@@ -359,38 +363,17 @@ body {
   width: 65%;
   flex-flow: column;
 }
-.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper div {
+.cabecalho .cabecalho__background .cabecalho__rodape .wrapper div {
   color: #FFF;
   padding: 2rem;
 }
-.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper div p {
+.cabecalho .cabecalho__background .cabecalho__rodape .wrapper div p {
   font-size: 1.5rem;
   text-align: center;
   line-height: 1.8rem;
 }
-.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper div p span {
+.cabecalho .cabecalho__background .cabecalho__rodape .wrapper div p span {
   color: #FFE01B;
-}
-.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper .rodape_cabecalho_texto {
-  display: flex;
-  align-items: center;
-  padding: 0.8rem 2rem;
-}
-.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper .rodape_cabecalho_texto figure {
-  padding-right: 1rem;
-}
-.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper .rodape_cabecalho_texto figure svg {
-  height: 2.5rem;
-  width: 2.5rem;
-}
-.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper .rodape_cabecalho_texto figure svg path {
-  fill: #FFE01B;
-}
-.wrapper_cabecalho .background_banner .rodape_cabecalho .wrapper .rodape_cabecalho_texto p {
-  text-align: left;
-  font-size: 1.5rem;
-  font-weight: normal;
-  padding: 0.5rem 0;
 }
 
 .wrapper {
@@ -398,51 +381,50 @@ body {
   margin: 0 auto;
 }
 
-.wrapper_servicos {
+.servicos {
   background: #FFF;
 }
-.wrapper_servicos .titulo_modelo_dois {
+.servicos .servicos__titulo {
   text-align: center;
   padding: 3rem 0rem;
 }
-.wrapper_servicos .titulo_modelo_dois h3 {
-  font-size: 3rem;
+.servicos .servicos__titulo h3 {
   font-family: "Montserrat";
   font-weight: 100;
 }
-.wrapper_servicos .titulo_modelo_dois h3 span {
+.servicos .servicos__titulo h3 span {
   color: #449598;
 }
-.wrapper_servicos .wrapper-grid {
+.servicos .servicos__grid {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   grid-gap: 4rem 4rem;
   padding-bottom: 5rem;
   justify-content: center;
 }
-.wrapper_servicos .wrapper-grid div {
+.servicos .servicos__grid div {
   display: grid;
   grid-template-rows: 100px 70px 155px;
   align-items: center;
   background: #FFF;
 }
-.wrapper_servicos .wrapper-grid div figure {
+.servicos .servicos__grid div figure {
   justify-self: flex-start;
 }
-.wrapper_servicos .wrapper-grid div #Layer_1 {
+.servicos .servicos__grid div #Layer_1 {
   height: 4rem;
   width: 4rem;
 }
-.wrapper_servicos .wrapper-grid div #Layer_1 rect {
+.servicos .servicos__grid div #Layer_1 rect {
   fill: #0a5b5e;
 }
-.wrapper_servicos .wrapper-grid div #Layer_1 path {
+.servicos .servicos__grid div #Layer_1 path {
   fill: #0a5b5e;
 }
-.wrapper_servicos .wrapper-grid div #Layer_1 polygon {
+.servicos .servicos__grid div #Layer_1 polygon {
   fill: #0a5b5e;
 }
-.wrapper_servicos .wrapper-grid .texto_titulo_servicos {
+.servicos .servicos__grid .servicos__texto {
   font-size: 1.3rem;
   font-weight: 600;
   color: #449598;
@@ -450,14 +432,14 @@ body {
   align-self: flex-start;
   text-transform: uppercase;
 }
-.wrapper_servicos .wrapper-grid .texto_titulo_servicos::after {
+.servicos .servicos__grid .servicos__texto::after {
   content: "";
   border-bottom: 5px solid #449598;
   display: block;
   padding-top: 0.8rem;
   width: 15%;
 }
-.wrapper_servicos .wrapper-grid .texto_servicos {
+.servicos .servicos__grid .servicos__texto--paragrafo {
   font-family: "Nunito Sans";
   font-size: 0.9rem;
   line-height: 1.5625rem;
@@ -466,50 +448,49 @@ body {
   font-weight: 600;
 }
 
-.wrapper_orcamento_projeto .background_banner {
+.orcamento .orcamento__background {
   background: #ffe500bf;
 }
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content {
+.orcamento .orcamento__background .orcamento__background--secundario .orcamento__conteudo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 0rem 5rem 0rem;
+  margin: 1rem 0rem 0rem 0rem;
 }
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content div {
+.orcamento .orcamento__background .orcamento__background--secundario .orcamento__conteudo div {
   width: 50%;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content div h3 {
-  font-size: 3rem;
+.orcamento .orcamento__background .orcamento__background--secundario .orcamento__conteudo div h3 {
   font-family: "Montserrat";
   font-weight: 100;
   text-align: center;
   margin-bottom: 3rem;
 }
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content div h3 span {
+.orcamento .orcamento__background .orcamento__background--secundario .orcamento__conteudo div h3 span {
   color: #449598;
 }
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content div h2 {
+.orcamento .orcamento__background .orcamento__background--secundario .orcamento__conteudo div h2 {
   color: #000;
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
 }
-.wrapper_orcamento_projeto .background_banner .background_banner_secundario .orcamento_projeto_content div p {
+.orcamento .orcamento__background .orcamento__background--secundario .orcamento__conteudo div p {
   color: #000;
   font-size: 1.5rem;
   text-align: center;
   line-height: 1.8rem;
 }
 
-.titulo_carrousel .titulo_modelo_dois {
+.projetos .projetos__titulo {
   text-align: center;
   padding: 5rem 0;
   text-transform: uppercase;
 }
-.titulo_carrousel .titulo_modelo_dois h3::after {
+.projetos .projetos__titulo h3::after {
   content: "";
   border-bottom: 5px solid #000;
   display: block;
@@ -519,83 +500,83 @@ body {
   margin-top: 1rem;
   border-radius: 1rem;
 }
-.titulo_carrousel .titulo_modelo_dois h3 {
+.projetos .projetos__titulo h3 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2rem;
   color: #000;
   line-height: 2.3rem;
 }
-.titulo_carrousel .titulo_modelo_dois h3 span {
+.projetos .projetos__titulo h3 span {
   font-family: Segoe Print;
   color: #FFE01B;
   display: block;
 }
 
-.wrapper_carousel {
+.carousel {
   background: rgba(12, 117, 121, 0.77);
 }
-.wrapper_carousel .wrapper {
+.carousel .wrapper {
   display: flex;
   justify-content: center;
   padding: 1rem 26rem;
 }
-.wrapper_carousel .wrapper .glider-contain {
+.carousel .wrapper .glider-contain {
   margin-top: 15px;
 }
-.wrapper_carousel .wrapper .glider-contain .glider div {
+.carousel .wrapper .glider-contain .glider div {
   text-align: center;
 }
-.wrapper_carousel .wrapper .glider-contain .glider div img {
+.carousel .wrapper .glider-contain .glider div img {
   max-width: 100%;
   height: auto;
 }
-.wrapper_carousel .wrapper .glider-contain .glider div p {
+.carousel .wrapper .glider-contain .glider div p {
   margin-top: 25px;
 }
-.wrapper_carousel .wrapper .glider-contain .glider-prev svg, .wrapper_carousel .wrapper .glider-contain .glider-next svg {
+.carousel .wrapper .glider-contain .glider-prev svg, .carousel .wrapper .glider-contain .glider-next svg {
   fill: #c7c725a6;
   height: 40px;
   width: 40px;
 }
-.wrapper_carousel .wrapper .glider-contain .glider-prev:hover, .wrapper_carousel .wrapper .glider-contain .glider-next:hover {
+.carousel .wrapper .glider-contain .glider-prev:hover, .carousel .wrapper .glider-contain .glider-next:hover {
   color: #FFE01B;
 }
-.wrapper_carousel .wrapper .glider-contain #dots {
+.carousel .wrapper .glider-contain #dots {
   margin-top: 15px;
 }
-.wrapper_carousel .wrapper .glider-contain #dots button {
+.carousel .wrapper .glider-contain #dots button {
   margin: 10px;
 }
 
-.wrapper_lamp {
+.content {
   padding: 5rem;
 }
-.wrapper_lamp .wrapper {
+.content .wrapper {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 }
-.wrapper_lamp .wrapper .titulo_modelo_tres {
+.content .wrapper .content__titulo {
   color: #FFE01B;
   text-transform: uppercase;
   font-weight: bold;
   width: 80%;
   margin: 0 auto;
 }
-.wrapper_lamp .wrapper .titulo_modelo_tres h3 {
+.content .wrapper .content__titulo h3 {
   font-size: 2rem;
   font-weight: bold;
   text-align: left;
   margin-bottom: 0.6rem;
 }
-.wrapper_lamp .wrapper .titulo_modelo_tres #sub_titulo {
+.content .wrapper .content__titulo .titulos__modelo--subtitulo {
   font-family: Segoe Print;
   font-size: 2rem;
   text-align: right;
 }
-.wrapper_lamp .wrapper p {
+.content .wrapper p {
   width: 70%;
   margin: 2rem 2rem 0rem 2rem;
   font-size: 1.5rem;
@@ -603,18 +584,18 @@ body {
   line-height: 1.5rem;
 }
 
-.wrapper_rodape {
+.rodape {
   background-color: rgba(12, 117, 121, 0.77);
 }
-.wrapper_rodape .background_rodape {
+.rodape .rodape__background {
   background-color: rgba(0, 0, 0, 0.64);
 }
-.wrapper_rodape .background_rodape .grid_rodape {
+.rodape .rodape__background .rodape__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1rem;
 }
-.wrapper_rodape .background_rodape .grid_rodape .rodape_1 {
+.rodape .rodape__background .rodape__grid .rodape__grid--column1 {
   padding: 4rem;
   display: flex;
   flex-flow: column;
@@ -623,10 +604,10 @@ body {
   color: #FFF;
   text-align: center;
 }
-.wrapper_rodape .background_rodape .grid_rodape .rodape_1 p {
+.rodape .rodape__background .rodape__grid .rodape__grid--column1 p {
   margin-top: 1rem;
 }
-.wrapper_rodape .background_rodape .grid_rodape .rodape_2 {
+.rodape .rodape__background .rodape__grid .rodape__grid--column2 {
   padding: 4rem 2rem;
   display: flex;
   flex-flow: column;
@@ -635,28 +616,28 @@ body {
   color: #FFF;
   text-align: center;
 }
-.wrapper_rodape .background_rodape .grid_rodape .rodape_2 div:first-child {
+.rodape .rodape__background .rodape__grid .rodape__grid--column2 div:first-child {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
 }
-.wrapper_rodape .background_rodape .grid_rodape .rodape_2 div:first-child p {
+.rodape .rodape__background .rodape__grid .rodape__grid--column2 div:first-child p {
   margin-left: 0.5rem;
 }
-.wrapper_rodape .background_rodape .grid_rodape .rodape_2 div:last-child {
+.rodape .rodape__background .rodape__grid .rodape__grid--column2 div:last-child {
   display: flex;
   align-items: center;
 }
-.wrapper_rodape .background_rodape .grid_rodape .rodape_2 div:last-child div {
+.rodape .rodape__background .rodape__grid .rodape__grid--column2 div:last-child div {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: flex-start;
 }
-.wrapper_rodape .background_rodape .grid_rodape .rodape_2 div:last-child div p {
+.rodape .rodape__background .rodape__grid .rodape__grid--column2 div:last-child div p {
   margin-left: 0.5rem;
 }
-.wrapper_rodape .background_rodape .grid_rodape .rodape_3 {
+.rodape .rodape__background .rodape__grid .rodape__grid--column3 {
   padding: 4rem 2rem;
   display: flex;
   flex-flow: column;
@@ -665,17 +646,17 @@ body {
   color: #FFF;
   text-align: center;
 }
-.wrapper_rodape .background_rodape .grid_rodape .rodape_3 a {
+.rodape .rodape__background .rodape__grid .rodape__grid--column3 a {
   text-decoration: none;
 }
-.wrapper_rodape .background_rodape .grid_rodape .rodape_3 div:last-child span {
+.rodape .rodape__background .rodape__grid .rodape__grid--column3 div:last-child span {
   display: block;
 }
-.wrapper_rodape .background_rodape .grid_rodape svg {
+.rodape .rodape__background .rodape__grid svg {
   width: 30px;
   height: 30px;
 }
-.wrapper_rodape .background_rodape .grid_rodape svg path {
+.rodape .rodape__background .rodape__grid svg path {
   fill: #FFE01B;
 }
 

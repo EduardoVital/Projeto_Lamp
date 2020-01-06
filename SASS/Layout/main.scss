@@ -1,13 +1,13 @@
 // MAIN ====================
-.wrapper_servicos {
+.servicos {
     background: $font-color-secundaria;
 
-    & .titulo_modelo_dois {
+    & .servicos__titulo {
         text-align: center;
         padding: 3rem 0rem;
 
         & h3 {
-            font-size: 3rem;
+            // font-size: 3rem;
             font-family: "Montserrat";
             font-weight: 100;
 
@@ -17,7 +17,7 @@
         }
     }
 
-    & .wrapper-grid {
+    & .servicos__grid {
         display: grid;
         grid-template-columns: 30% 30% 30%;
         grid-gap: 4rem 4rem;
@@ -54,7 +54,7 @@
                 }
             }
 
-            & .texto_titulo_servicos {
+            & .servicos__texto {
                 font-size: 1.3rem;
                 font-weight: 600;
                 color: #449598;
@@ -63,7 +63,7 @@
                 text-transform: uppercase;
             }
 
-            & .texto_titulo_servicos::after {
+            & .servicos__texto::after {
                 content: '';
                 border-bottom: 5px solid #449598;
                 display: block;
@@ -71,7 +71,7 @@
                 width: 15%;
             }
 
-            & .texto_servicos {
+            & .servicos__texto--paragrafo {
                 font-family: "Nunito Sans";
                 font-size: 0.9rem;
                 line-height: 1.5625rem;
@@ -84,16 +84,16 @@
     }
 
 
-.wrapper_orcamento_projeto {
-    & .background_banner {
+.orcamento {
+    & .orcamento__background {
         background:#ffe500bf;
 
-        & .background_banner_secundario {
-            & .orcamento_projeto_content {
+        & .orcamento__background--secundario {
+            & .orcamento__conteudo {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                margin: 1rem 0rem 5rem 0rem;
+                margin: 1rem 0rem 0rem 0rem;
 
                 & div {
                     width: 50%;
@@ -103,7 +103,7 @@
                     align-items: center;
 
                     & h3 {
-                        font-size: 3rem;
+                        // font-size: 3rem;
                         font-family: "Montserrat";
                         font-weight: 100;
                         text-align: center;
@@ -134,7 +134,7 @@
 
 // DIV titulo modelo dois ============
 
-.titulo_carrousel .titulo_modelo_dois {
+.projetos .projetos__titulo {
     text-align: center;
     padding: 5rem 0;
     text-transform: uppercase;
@@ -165,7 +165,7 @@
     }
 }
 
-.wrapper_carousel {
+.carousel {
     background: rgba(12, 117, 121, 0.77);
 
     & .wrapper {
@@ -217,7 +217,7 @@
     }
 }
 
-.wrapper_lamp {
+.content {
     padding: 5rem;
 
     & .wrapper {
@@ -226,7 +226,7 @@
         justify-content: center;
         align-items: center;
 
-        & .titulo_modelo_tres {
+        & .content__titulo {
             color: $font-color;
             text-transform: uppercase;
             font-weight: bold;
@@ -240,7 +240,7 @@
                 margin-bottom: 0.6rem;
             }
 
-            & #sub_titulo {
+            & .titulos__modelo--subtitulo {
                 font-family: Segoe Print;
                 font-size: 2rem;
                 text-align: right;

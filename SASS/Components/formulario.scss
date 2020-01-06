@@ -1,7 +1,7 @@
-.wrapper_formulario {
+.formulario {
     background: rgba(12, 117, 121, 0.77);
 
-        & .titulo_modelo_dois {
+        & .formulario__titulo {
             text-align: center;
             padding-top: 3rem;
 
@@ -36,13 +36,13 @@
         align-items: center;
         justify-content: center;
 
-        & .form_content {
+        & .formulario__content {
             display: flex;
             align-items: center;
             margin-top: 2rem;
             width: 100%;
 
-            & .form_box {
+            & .formulario__container {
                 width: 50%;
 
                 & div {
@@ -119,7 +119,7 @@
 
         }
 
-        & .form_content_button {
+        & .formulario__btn {
             margin-bottom: 2rem;
             
             & input[type="submit"] {

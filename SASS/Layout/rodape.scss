@@ -1,15 +1,15 @@
-.wrapper_rodape {
+.rodape {
     background-color: rgba(12, 117, 121, 0.77);
 
-    & .background_rodape {
+    & .rodape__background {
         background-color: rgba(0, 0, 0, 0.64);
 
-        & .grid_rodape {
+        & .rodape__grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 1rem;
 
-            & .rodape_1{
+            & .rodape__grid--column1{
                 padding: 4rem;
                 display: flex;
                 flex-flow: column;
@@ -24,7 +24,7 @@
                 }
             }
 
-            & .rodape_2 {
+            & .rodape__grid--column2 {
                 padding: 4rem 2rem;
                 display: flex;
                 flex-flow: column;
@@ -60,7 +60,7 @@
                 }
             }
             
-            & .rodape_3 {
+            & .rodape__grid--column3 {
                 padding: 4rem 2rem;
                 display: flex;
                 flex-flow: column;
