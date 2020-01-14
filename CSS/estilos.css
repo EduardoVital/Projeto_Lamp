@@ -448,37 +448,36 @@ body {
   font-weight: 600;
 }
 
-.orcamento .orcamento__background {
-  background: #ffe500bf;
-}
-.orcamento .orcamento__background .orcamento__background--secundario .orcamento__conteudo {
+.orcamento {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem 0rem 0rem 0rem;
 }
-.orcamento .orcamento__background .orcamento__background--secundario .orcamento__conteudo div {
+.orcamento .orcamento__imagem {
+  width: 50%;
+  background: #ffe500bf;
+  clip-path: circle(107% at 0% 50%);
+  shape-outside: circle(70% at 0% 50%) border-box;
+}
+.orcamento .orcamento__texto {
   width: 50%;
   display: flex;
-  flex-flow: column;
-  justify-content: center;
   align-items: center;
 }
-.orcamento .orcamento__background .orcamento__background--secundario .orcamento__conteudo div h3 {
+.orcamento .orcamento__texto .orcamento__texto__conteudo h3 {
   font-family: "Montserrat";
   font-weight: 100;
   text-align: center;
   margin-bottom: 3rem;
 }
-.orcamento .orcamento__background .orcamento__background--secundario .orcamento__conteudo div h3 span {
+.orcamento .orcamento__texto .orcamento__texto__conteudo h3 span {
   color: #449598;
 }
-.orcamento .orcamento__background .orcamento__background--secundario .orcamento__conteudo div h2 {
+.orcamento .orcamento__texto .orcamento__texto__conteudo h2 {
   color: #000;
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
+  text-align: center;
 }
-.orcamento .orcamento__background .orcamento__background--secundario .orcamento__conteudo div p {
+.orcamento .orcamento__texto .orcamento__texto__conteudo p {
   color: #000;
   font-size: 1.5rem;
   text-align: center;

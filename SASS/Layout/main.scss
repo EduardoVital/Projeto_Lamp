@@ -85,48 +85,48 @@
 
 
 .orcamento {
-    & .orcamento__background {
+    display: flex;
+
+    & .orcamento__imagem {
+        width: 50%;
         background:#ffe500bf;
+        clip-path: circle(107% at 0% 50%);
+        shape-outside: circle(70% at 0% 50%) border-box;
+    }
 
-        & .orcamento__background--secundario {
-            & .orcamento__conteudo {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin: 1rem 0rem 0rem 0rem;
+    & .orcamento__texto {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        // clip-path: circle(157% at 147% 50%);
+        // shape-outside: circle(50% at 0% 70%) border-box;
+        // background: #0a5b5e;
 
-                & div {
-                    width: 50%;
-                    display: flex;
-                    flex-flow: column;
-                    justify-content: center;
-                    align-items: center;
+        & .orcamento__texto__conteudo {
 
-                    & h3 {
-                        // font-size: 3rem;
-                        font-family: "Montserrat";
-                        font-weight: 100;
-                        text-align: center;
-                        margin-bottom: 3rem;
+            & h3 {
+                font-family: "Montserrat";
+                font-weight: 100;
+                text-align: center;
+                margin-bottom: 3rem;
 
-                        & span {
-                            color: #449598;
-                        }
-                    }
-
-                    & h2 {
-                        color: $font-color-terceira;
-                        margin-bottom: 1.5rem;
-                        font-size: 2.5rem;
-                    }
-
-                    & p {
-                        color: $font-color-terceira;
-                        font-size: 1.5rem;
-                        text-align: center;
-                        line-height: 1.8rem;
-                    }
+                & span {
+                    color: #449598;
                 }
+            }
+
+            & h2 {
+                color: $font-color-terceira;
+                margin-bottom: 1.5rem;
+                font-size: 2.5rem;
+                text-align: center;
+            }
+
+            & p {
+                color: $font-color-terceira;
+                font-size: 1.5rem;
+                text-align: center;
+                line-height: 1.8rem;
             }
         }
     }
